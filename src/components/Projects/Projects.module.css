@@ -1,0 +1,104 @@
+
+
+
+.mainText, .backend_container, .container{
+    width: 90%;
+    margin: auto;
+}
+.mainText h1{
+    text-align: center;
+    margin: 3%;
+}
+.mainText h2{
+    margin-bottom: 7%;
+}
+
+
+
+
+.projects .container .inner_container{
+    
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    overflow: visible;
+    
+    
+}
+
+
+
+.projects .inner_container .images a .text:hover{
+    opacity: 0.8;
+    color: rgb(115, 115, 192);
+    
+}
+
+.back_end_sorry_text{
+    padding-bottom: 5%;
+    
+    
+}
+.backend_images_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.backend_images{
+    width: 25%;
+    padding-bottom: 5%;
+    
+    
+}
+.backend_images a{
+    text-decoration: none;
+}
+.backend_items{
+    width: 100%;
+    height: 9em;
+    border-radius: 3%;
+    border: 2px solid rgb(62, 66, 94);
+    
+}
+
+
+@media only screen and (max-width: 700px){
+    .mainText h1{
+        text-align: left;
+        margin: 20px 0px;
+        padding: 10px 0px;
+        font-size: 1.2em;
+    }
+    .mainText h2, .back_end_sorry_text h2{
+        font-size: 1em;
+        padding: 20px 0px;
+        margin: 0px;
+    }
+    .back_end_sorry_text h3{
+        font-size: 0.9em;
+    }
+    .projects .container .inner_container{
+        display: flex;
+        gap: 2px;
+       
+    }
+    .container{
+        overflow: hidden;
+        
+    }
+    .projects{
+        margin: 0 3%;
+    }
+    .backend_images{
+        min-width: 18rem;
+        
+    }
+    .backend_images_container{
+        display: flex;
+        flex-direction: column;
+    }
+}

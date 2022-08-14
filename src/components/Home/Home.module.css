@@ -1,0 +1,188 @@
+
+
+.homeContainer{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 8em;
+
+}
+
+.pythonContainer{
+    position: relative;
+    left: 5%;
+    width: 90%;
+    
+    
+}
+.pythonImg {
+    width: 100%;
+    animation: fadeIn 4s ease-in-out infinite;   
+    margin: 10px;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0.5; }
+
+   
+    50% {opacity: 1;transform: translateY(-10px);}
+    
+    100% {opacity:0.5;}
+    
+  }
+
+.searchDownload{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+
+.intro, .formText, .formHeader{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 3px 3px rgb(9, 9, 20);
+    
+}
+ h2{
+    font-size: 30px;
+    padding: 30px 0px;
+}
+ h1{
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+span{
+    color: rgb(48, 130, 238);
+}
+.downloadBtn, .toSkills{
+    width:200px ;
+    height: 60px;
+    color: white;
+    margin: 5% 40px 5% 0%;
+    background-color: #3e88bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(21, 44, 71);
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0px 8px 15px rgb(8, 9, 29);
+    transition: all 0.3s ease 0s;
+    
+}
+.downloadBtn:hover{
+    transform: translateY(-7px);
+}
+ .toSkills:hover{
+    transform: translateY(-7px);
+}
+
+.toSkills img{
+    max-width: 24px;
+    max-height: 24px;
+    padding-right: 10px;
+    
+}
+.toSkills p{
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.downloadBtn p{
+    padding-left:10px ;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.formSectionContainer{
+    width: 90%;
+    margin: auto;
+    margin-top: 15%;
+    padding-bottom: 8%;
+}
+.formText{
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 3% 0% 3% 0%;
+}
+.formText a{
+    text-decoration: none;
+    color: #f8ca29;
+}
+@media screen and (max-width: 760px) {
+    .homeContainer{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .searchDownloadText{
+        width: 50% ;
+        
+        
+        
+    }
+    .intro h2 {
+        font-size: 1em;
+        padding: 15%;
+        
+        
+    }
+    .intro h1{
+        position: relative;
+        width: 100%;
+        padding: 15%;
+        font-size:1.7em;
+    }
+    .searchDownload{
+        padding: 15%;
+    }
+    .downloadBtn, .toSkills{
+        font-size: 0.7em;
+        width: 120px;
+        height: 35px;
+        margin: 0px;
+    }
+    .downloadBtn{
+        margin-right: 1.5rem;
+    }
+    .toSkills img{
+        max-width: 18px;
+        max-height: 18px;
+        padding: 8px;
+        
+    }
+  
+    .pythonImg{
+        position: relative;
+        top: 0px;
+        right: -5px;
+        width: 230px;
+        animation: none;
+        opacity: 0.7;
+        overflow: visible;
+        
+    }
+    .formSectionContainer {
+        padding: 5%;
+    }
+
+    .formHeader h1{
+        font-size: 1.4em;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .formText h3{
+        font-size: 0.7em;
+        padding-bottom: 5%;
+    }
+    .formText{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+   
+    
+}

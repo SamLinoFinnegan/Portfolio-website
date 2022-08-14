@@ -1,0 +1,20 @@
+import React from "react";
+import Style from './Project.module.css';
+import {motion} from 'framer-motion'
+
+
+
+
+const Project = (props) =>{
+    return (
+        <motion.div className={Style.images}>
+            <a href={props.href}>
+                <img className={Style.movieList} src={props.img} alt={props.alt}></img>
+            </a>
+                <p className={Style.text}>{props.text}</p>
+            
+        </motion.div>
+    )
+}
+
+export default Project
