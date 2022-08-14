@@ -15,11 +15,11 @@ function App() {
       <div>
         <NavBar />
         <Routes>
-          <Route path="/"  component={<Home/>} />
-          <Route path="/home" component={<Home/>} />
-          <Route path="/about" component={<About/>} />
-          <Route path="/skills" component={<Skills/>} />
-          <Route path="/projects" component={<Projects/>} />
+          <Route path="/"  element={<Home/>} />
+          <Route path="/home" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/skills" element={<Skills/>} />
+          <Route path="/projects" element={<Projects/>} />
         </Routes>
         <Footer />
       </div>
