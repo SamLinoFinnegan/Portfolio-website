@@ -11,8 +11,9 @@ const Project = (props) =>{
             <a href={props.href}>
                 <img className={Style.movieList} src={props.img} alt={props.alt}></img>
             </a>
+            <a href={props.href}>
                 <p className={Style.text}>{props.text}</p>
-            
+                </a>
         </motion.div>
     )
 }

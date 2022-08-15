@@ -83,6 +83,7 @@
     }
     .projects .container .inner_container{
         display: flex;
+        height: 350px;
         gap: 2px;
        
     }
@@ -97,8 +98,10 @@
         min-width: 18rem;
         
     }
+    
     .backend_images_container{
         display: flex;
         flex-direction: column;
+       
     }
 }

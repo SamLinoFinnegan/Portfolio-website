@@ -1,3 +1,5 @@
+
+
 .footer {
     width: 100%;
     border: #133c79 2px solid;
@@ -48,6 +50,10 @@
   .email a{
     padding: 2px;
     
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
   }
   .footerIcon{
     margin-top: 0px;

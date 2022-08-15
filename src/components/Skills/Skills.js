@@ -279,7 +279,7 @@ const Skills = () => {
 
             </div>
             <div className={Style.skillLangHead}>
-                <h1>Human Languages</h1>
+                <h2>Human Languages</h2>
             </div>
             <div className={Style.skillLanguages}>
                 <div className={Style.languageContainer}>

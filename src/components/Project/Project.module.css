@@ -37,4 +37,8 @@
         pointer-events: none;
 
     }
+    .images .text{
+        margin: 5%;
+        font-size: 0.7em;
+    }
 }

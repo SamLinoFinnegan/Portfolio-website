@@ -105,6 +105,9 @@
     margin: auto;
     
 }
+.skillLangHead h2{
+    margin: 5%;
+}
 .languageContainer{
     display: flex;
     justify-content: center;
@@ -172,7 +175,7 @@
     .background{
       display: none;
     }
-    .skillLangHead h1{
+    .skillLangHead h2{
         font-size: 1.5em;
         text-align: center;
         padding: 5%;

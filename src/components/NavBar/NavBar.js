@@ -80,49 +80,5 @@ function NavBar() {
     );
   }
 
-// const NavBar = () => {
-//     return (
-//         <div >
-//             <nav className={Style.navBar} id="navBar">
-                
-//                 <div className={Style.nav_container} >
-//                     <div className={Style.dropdown_icon}>
-//                             <ul>
-//                                 <li>
-//                                     <Link to='/home'>
-//                                         Home
-//                                     </Link>
-//                                 </li>
-//                                 <li>
-//                                     <Link to='/skills'>
-//                                         Skills
-//                                     </Link>
-//                                 </li>
-//                                 <li>
-//                                     <Link to='/projects'>
-//                                         Projects
-//                                     </Link>
-//                                 </li>
-//                                 <li>
-//                                     <Link to='/about'>
-//                                         About
-//                                     </Link>
-//                                 </li>
-//                             </ul>
-//                     </div>
-                    
-//                 </div>
-//                 <div className={Style.social_media_icons}>
-//                         <ul>
-//                             <li> <a href="https://github.com/SamLinoFinnegan"><FaGithub className={Style.Icon} /></a></li>
-//                             <li> <a href="https://www.linkedin.com/in/samuel-lino-b11944ab/"> <ImLinkedin className={Style.Icon} /></a></li>
-//                             <li> <a href="mailto: samuel.a.lino.sl@gmail.com"><FaGoogle className={Style.Icon} /></a></li>
-//                             <li> <a href="https://www.facebook.com/samuel.lino.3745/"><FaFacebook className={Style.Icon} /></a></li>
-//                         </ul>
-//                 </div>
-//             </nav>
-//         </div>
-//     );
-// }
 
 export default NavBar;
