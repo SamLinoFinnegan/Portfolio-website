@@ -79,6 +79,7 @@ const Projects = () => {
                 <motion.div drag="x" dragConstraints={{right:0, left:-width}} className={Style.inner_container}>
 
                 {the_projects}
+                
                 </motion.div>
             </motion.div>
             <div className={Style.backend_container}>

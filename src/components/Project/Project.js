@@ -13,7 +13,8 @@ const Project = (props) =>{
             </a>
             <a href={props.href}>
                 <p className={Style.text}>{props.text}</p>
-                </a>
+            </a>
+            
         </motion.div>
     )
 }

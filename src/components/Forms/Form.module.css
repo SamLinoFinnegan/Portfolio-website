@@ -20,7 +20,12 @@
   }
   .contactForm textarea{
     height: 100px;
+
   }
+  ::placeholder{
+    padding: 10px;
+  }
+  
   .contactForm button{
     width:130px ;
     height: 40px;
