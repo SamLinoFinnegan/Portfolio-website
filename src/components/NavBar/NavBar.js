@@ -71,7 +71,7 @@ function NavBar() {
                    <ul>
                        <li> <a href="https://github.com/SamLinoFinnegan"><FaGithub className="Icon" /></a></li>
                        <li> <a href="https://www.linkedin.com/in/samuel-lino-b11944ab/"> <ImLinkedin className="Icon" /></a></li>
-                       <li> <a href="mailto: samuel.a.lino.sl@gmail.com"><FaGoogle className="Icon" /></a></li>
+                       <li> <a href="https://partner.cloudskillsboost.google/public_profiles/49c8b25a-ae2f-4ffb-885e-fab4c21000af"><FaGoogle className="Icon" /></a></li>
                        <li> <a href="https://www.facebook.com/samuel.lino.3745/"><FaFacebook className="Icon" /></a></li>
                    </ul>
            </div>

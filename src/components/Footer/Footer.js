@@ -33,7 +33,7 @@ const Footer = () => {
                     <ImLinkedin className={Style.footerIcon} />
                     
                 </a>
-                <a target="blanc" href="mailto: samuel.a.lino.sl@gmail.com">
+                <a target="blanc" href="https://partner.cloudskillsboost.google/public_profiles/49c8b25a-ae2f-4ffb-885e-fab4c21000af">
                     
                     <FaGoogle className={Style.footerIcon} />
                     
