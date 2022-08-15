@@ -28,7 +28,7 @@ const Footer = () => {
                     <FaGithub className={Style.footerIcon} />
                   
                 </a>
-                <a target="blanc" href="https://linkedin.com/in/samuel-finnegan-b11944ab/">
+                <a target="blanc" href="https://linkedin.com/in/samuel-finnegan-b11944ab">
                     
                     <ImLinkedin className={Style.footerIcon} />
                     

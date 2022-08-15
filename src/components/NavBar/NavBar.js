@@ -69,10 +69,10 @@ function NavBar() {
           </div>
           <div className="social_media_icons">
                    <ul>
-                       <li> <a href="https://github.com/SamLinoFinnegan"><FaGithub className="Icon" /></a></li>
-                       <li> <a href="https://www.linkedin.com/in/samuel-lino-b11944ab/"> <ImLinkedin className="Icon" /></a></li>
-                       <li> <a href="https://partner.cloudskillsboost.google/public_profiles/49c8b25a-ae2f-4ffb-885e-fab4c21000af"><FaGoogle className="Icon" /></a></li>
-                       <li> <a href="https://www.facebook.com/samuel.lino.3745/"><FaFacebook className="Icon" /></a></li>
+                       <li> <a target="blanc" href="https://github.com/SamLinoFinnegan"><FaGithub className="Icon" /></a></li>
+                       <li> <a target="blanc" href="https://linkedin.com/in/samuel-finnegan-b11944ab"> <ImLinkedin className="Icon" /></a></li>
+                       <li> <a target="blanc" href="https://partner.cloudskillsboost.google/public_profiles/49c8b25a-ae2f-4ffb-885e-fab4c21000af"><FaGoogle className="Icon" /></a></li>
+                       <li> <a target="blanc" href="https://www.facebook.com/samuel.lino.3745/"><FaFacebook className="Icon" /></a></li>
                    </ul>
            </div>
         </nav>
