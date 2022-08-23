@@ -61,7 +61,9 @@ const About = () => {
                         Since I was a child, I always liked to organize my things in a more practical manner, always picking the right color and clothes based on the mood or purpose, always having a conscious meaning, over time I realized that the excess of decorations, items, and information bothered me.
                         <br/>
                     
-                        While in nutrition school, I started using diet and exercise calculator apps, I noticed that a lot of the functionality was difficult to use and understand, and several of my colleagues were also facing the same difficulties using these tools, so I thought: "If these specific functionalities had other names or if I had a clearer way of interacting with them, maybe it would be easier to use, and we wouldn't waste soo much time". At that moment, I wanted to propose a solution, but I didn't know how.
+                        While in nutrition school, I started using diet and exercise calculator apps, I noticed that a lot of the functionality was difficult to use and understand, and several of my colleagues were also facing the same difficulties using these tools, so I thought: <i>"If these specific functionalities had other names or if I had a clearer way of interacting with them, maybe it would be easier to use, and we wouldn't waste soo much time"</i>.
+                        <br/>
+                        At that moment, I wanted to propose a solution, but I didn't know how.
                         <br/>
                         
                         Then I discovered UX design and its importance in retaining attention and facilitating the user experience, turning websites and apps into a comfortable place to be. I enrolled in the Coursera UX design course and try every day to stay updated and pay attention to what users say and get insights to think about improvements
