@@ -16,7 +16,9 @@
 .larissaText p{
     width: 60%;
 }
-
+.larissaText i{
+    color: rgb(216, 216, 192);
+}
 .samText h1, .larissaText h1{
     margin-bottom:2em ;
 }
