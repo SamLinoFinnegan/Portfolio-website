@@ -23,19 +23,6 @@ import dots from "./../../img/3dots.png"
 const Skills = () => {
     
 
-    let [skill, upDateSkill] = useState(backend)      
-
-
-    const putSkill = (event) => {
-        let answer = event.target.innerText;
-        if (answer === "BackEnd") {
-            upDateSkill(backend)
-        } else if (answer === "FrontEnd") {
-            upDateSkill(frontend)
-        } else if (answer === "Other") {
-            upDateSkill(otherSkill)
-        }
-    }
 
     let [backIsActive, setBack] = useState(false)
     let [frontIsActive, setFront] = useState(false)
@@ -167,7 +154,20 @@ const Skills = () => {
 
 
     
+    
+    let [skill, upDateSkill] = useState(backend)      
 
+
+    const putSkill = (event) => {
+        let answer = event.target.innerText;
+        if (answer === "BackEnd") {
+            upDateSkill(backend)
+        } else if (answer === "FrontEnd") {
+            upDateSkill(frontend)
+        } else if (answer === "Other") {
+            upDateSkill(otherSkill)
+        }
+    }
 
 
     return (
