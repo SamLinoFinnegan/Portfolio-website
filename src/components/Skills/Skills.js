@@ -23,7 +23,7 @@ import dots from "./../../img/3dots.png"
 const Skills = () => {
     
 
-    let [skill, upDateSkill] = useState()      
+    let [skill, upDateSkill] = useState(backend)      
 
 
     const putSkill = (event) => {
