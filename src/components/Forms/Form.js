@@ -5,10 +5,11 @@ import plane from './../../img/send_icon.png'
 export default function Form() {
     return (
       <form 
-        method='POST' 
-        name='contactform' 
+        method='post' 
+        name='contactForm' 
         className={Style.contactForm}>
         <div className={Style.inputNameAndEmail}>
+        <input type="hidden" name="form-name" value="contactForm" />
         <input 
           type='text' 
           name='name' 
