@@ -7,21 +7,20 @@ export default function Form() {
       <form 
         method='POST' 
         name='contactform' 
-        data-netlify="true"
         className={Style.contactForm}>
         <div className={Style.inputNameAndEmail}>
         <input 
           type='text' 
-          name='contactform' 
+          name='name' 
           placeholder='Enter your name' />
   
         <input 
           type='email' 
-          name='contactform' 
+          name='email' 
           placeholder='Enter your email' />
         </div>
         <textarea 
-          name='contactform' 
+          name='message' 
           placeholder='Messaage'></textarea>
   
         <button type='submit'>
