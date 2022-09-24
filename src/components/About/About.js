@@ -48,7 +48,11 @@ const About = () => {
                 <h2>I work in colaboration for web and app UI/UX design, with: </h2>
             </div>
             <div className={Style.aboutLarissaContainer}>
-                
+                <div className={Style.larissaImg}>
+                    <a href={larissa} alt="Larissa">
+                        <img src={larissa} alt="Larissa"></img>
+                    </a>
+                </div>
                 
                 <div className={Style.larissaText}>
                     <h1>Larissa Arnold</h1>
@@ -69,13 +73,7 @@ const About = () => {
                         Then I discovered UX design and its importance in retaining attention and facilitating the user experience, turning websites and apps into a comfortable place to be. I enrolled in the Coursera UX design course and try every day to stay updated and pay attention to what users say and get insights to think about improvements
                     </p>
 
-                </div>
-                <div className={Style.larissaImg}>
-                    <a href={larissa} alt="Larissa">
-                        <img src={larissa} alt="Larissa"></img>
-                    </a>
-                </div>
-                
+                </div>                
             </div>
         </div>
     );

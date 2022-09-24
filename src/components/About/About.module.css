@@ -46,67 +46,33 @@ span{
 }
 
 @media screen and (max-width: 760px){
+
+    .aboutSamContainer, .aboutLarissaContainer, .midText, .about,.samImg, .larissaImg, .samText, .larissaText, .larissaText p{
+        all: unset;
+    }
     .about{
         width: 90%;
         margin: auto;
-    }
-  
-    .samImg img{
-        max-width: 8em;
-        margin: 20px 25px 10px 12px;
-        float: left;
-    }
-    .aboutSamContainer, .aboutLarissaContainer, .midText{
-        display: inline;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         
     }
-    .samText{
-        margin: 30px 0;
-        padding: 0px;
-        min-width: 100%;
-    }
-    .samText p, .larissaText p{
-        width: 90%;
-        margin: auto;
-        padding: 0px;
-        font-size: 0.7em;
-    }
-    .samText h1{
-        font-size: 1em;
-        margin: 0px;
-        padding: 10px 0;
-    }
-    
-    .larissaImg img{
-        max-width: 9em;        
-        
-    }
-    .about .aboutLarissaContainer div{
-        margin-bottom: 5em;
-        
-    }
-    .larissaText {
-        width: 50%;
-        margin-bottom: 30px;
-        margin-right: 10px;
-        float: left;
-        margin-left: 3%;
-        
-        
-    }
-    .larissaText h1{
-        width: 90%;
-        margin: auto;
-        padding-bottom: 5%;
-        font-size: 1em;
-        
+    .samImg, .larissaImg{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15%;
+        padding-top: 15%;
 
     }
-   
-    .midText h2{
-        width: 90%;
-        margin: auto;
-        font-size: 1.3em;
+    .samImg img, .larissaImg img{
+        width: 13em;
     }
+    .samText p, .larissaText p{
+        font-size: 1.4em;
+    }
+
    
+
+
 }
