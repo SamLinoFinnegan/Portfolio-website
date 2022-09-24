@@ -69,7 +69,10 @@ span{
         width: 13em;
     }
     .samText p, .larissaText p{
-        font-size: 1.4em;
+        font-size: 1.2em;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+
     }
 
    
