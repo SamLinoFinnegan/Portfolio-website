@@ -62,7 +62,7 @@ span{
         display: flex;
         justify-content: center;
         padding-bottom: 15%;
-        padding-top: 15%;
+        padding-top: 10%;
 
     }
     .samImg img, .larissaImg img{
@@ -72,6 +72,8 @@ span{
         font-size: 1.2em;
         color: white;
         font-family: 'Roboto', sans-serif;
+        padding-bottom: 15%;
+
 
     }
 
