@@ -56,7 +56,7 @@ span{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        min-height: 3200px;
+        min-height: 3150px;
         
     }
     .samImg, .larissaImg{
@@ -67,7 +67,7 @@ span{
 
     }
     .samImg img, .larissaImg img{
-        width: 13em;
+        width: 14em;
     }
     .samText p, .larissaText p{
         font-size: 1.2em;
