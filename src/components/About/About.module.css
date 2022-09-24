@@ -56,14 +56,14 @@ span{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        min-height: 3500px;
+        min-height: 3200px;
         
     }
     .samImg, .larissaImg{
         display: flex;
         justify-content: center;
         padding-bottom: 15%;
-        padding-top: 10%;
+        padding-top: 8%;
 
     }
     .samImg img, .larissaImg img{
