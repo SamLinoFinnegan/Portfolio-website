@@ -9,6 +9,7 @@ import todo from './../../img/TodoList.jpg';
 import api from './../../img/Api.jpg';
 import SuperPy from './../../img/SuperPy.png';
 import Orm from './../../img/Orm.png'
+import side_project from "./../../img/side_project"
 import {motion} from 'framer-motion';
 
 
@@ -99,7 +100,13 @@ const Projects = () => {
                     <div className={Style.backend_images}>
                         <a href={Orm}>
                             <img className={Style.backend_items} src={Orm} alt="Orm database"></img>
-                            <p className={Style.text}>This is still a work in progress - A ORM modeling program in Python to Read/Write/Query SQL database, with a Flask front-end interface  </p>
+                            <p className={Style.text}>A ORM modeling program in Python to Read/Write/Query SQL database, with a Flask front-end interface  </p>
+                        </a>
+                    </div>
+                    <div className={Style.backend_images}>
+                        <a href={side_project}>
+                            <img className={Style.backend_items} src={side_project} alt="CRUD"></img>
+                            <p className={Style.text}>New project, CRUD application with a React front-end, and a Python back-end, wrapped in a Docker container with a Redis cash </p>
                         </a>
                     </div>
                 </div>
