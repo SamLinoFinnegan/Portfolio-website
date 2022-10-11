@@ -9,7 +9,7 @@ import todo from './../../img/TodoList.jpg';
 import api from './../../img/Api.jpg';
 import SuperPy from './../../img/SuperPy.png';
 import Orm from './../../img/Orm.png'
-import side_project from "./../../img/side_project"
+import side_project from "./../../img/Side_project.jpg"
 import {motion} from 'framer-motion';
 
 
