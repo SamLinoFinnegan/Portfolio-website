@@ -88,7 +88,7 @@ const Projects = () => {
                     <div>
                         <h2>Back-End projects</h2>
                     </div>
-                    <h3>At the moment I am still completing my Back-end course, so i still havent had that many Back-end projects</h3>
+                    <h3>These are some of my favorite Back-end projects</h3>
                 </div>
                 <div className={Style.backend_images_container}>
                     <div className={Style.backend_images}>
