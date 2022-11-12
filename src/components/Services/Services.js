@@ -7,7 +7,7 @@ const Services = () =>{
     return(
         <div className={Style.services}>
             <div className={Style.container}>
-                <img src={construction} alt="page_under_construction"></img>
+                <img src={construction} alt="page_under_construction" style={{width:600}}></img>
                 <h1>Page under construction</h1>
             </div>
             
