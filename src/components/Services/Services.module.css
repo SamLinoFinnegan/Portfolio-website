@@ -8,6 +8,7 @@
     
 }
 .container img{
-    max-width: 80%;
+    margin: 50px;
+    max-width: 100%;
     height: auto;
 }
