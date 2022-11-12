@@ -1,6 +1,6 @@
 import React from "react";
 import Style from './About.module.css';
-import me from './../../img/me.jpg';
+import me from './../../img/me.jpeg';
 import larissa from './../../img/larissa.JPG';
 
 
