@@ -62,6 +62,17 @@ function NavBar() {
                   Projects
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  exact
+                  to="/services"
+                  activeclassname="active"
+                  className="nav-links"
+                 onClick={click ? handleClick : null}
+                >
+                  Services
+                </Link>
+              </li>
             </ul>
             <div className="nav-icon" onClick={handleClick}>
               <div>{click ? <FaTimes/> : <FaBars />}</div>
