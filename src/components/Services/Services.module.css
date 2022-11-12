@@ -1,13 +1,13 @@
 .services{
-    min-height: 1000px;
+    min-height: 800px;
 }
 .container{
     width: 80%;
     margin: auto;
     text-align: center;
-    margin-top: 100px;
+    
 }
 .container img{
-    width: 80%;
+    max-width: 80%;
     height: auto;
 }
