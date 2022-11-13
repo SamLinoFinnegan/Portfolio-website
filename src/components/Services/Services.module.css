@@ -8,6 +8,7 @@
     
 }
 .container img{
+    border-radius: 5%;
     margin-top: 50px;
     margin-bottom: 50px;
     max-width: 100%;
