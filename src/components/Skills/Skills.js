@@ -150,6 +150,10 @@ const Skills = () => {
                                 <li>Linux/Bash basics  </li>
                                 <FaLinux className={Style.footerIcon} />
                             </div>
+                            <div className={Style.invisible}>
+                                <li>Network basics  </li>
+                                <VscJson className={Style.footerIcon} />
+                            </div>
                         </ul>
                         </div>
 
