@@ -1,19 +1,10 @@
 import React, { useState } from "react";
 import Style from './Skills.module.css'
-
-import { FaGithub } from "react-icons/fa";
-import { SiJest } from "react-icons/si"
-import { FaPizzaSlice } from "react-icons/fa"
+import { FaGithub, FaInfinity, FaDocker, FaNodeJs, FaLinux, FaReact, FaSass, FaPizzaSlice } from "react-icons/fa";
+import { SiJest, SiFlask, SiPython, SiRedux, SiJavascript} from "react-icons/si"
 import { VscJson } from "react-icons/vsc"
 import { AiFillHtml5 } from "react-icons/ai"
-import { FaSass } from "react-icons/fa"
-import { SiJavascript } from "react-icons/si"
-import { FaReact } from "react-icons/fa"
-import { SiRedux } from "react-icons/si"
-import { SiPython } from "react-icons/si"
-import { SiFlask } from "react-icons/si"
 import { GrMysql } from "react-icons/gr"
-import { FaNodeJs } from "react-icons/fa"
 import mec from "./../../img/mechanism.png"
 import frontImg from "./../../img/front-end.png"
 import dots from "./../../img/3dots.png"
@@ -88,6 +79,14 @@ const Skills = () => {
                     <li>NodeJs </li>
                     <FaNodeJs className={Style.footerIcon} />
                 </div>
+                <div className={Style.invisible}>
+                    <li>Docker </li>
+                    <FaDocker className={Style.footerIcon} />
+                </div>
+                <div className={back}>
+                    <li>CI / CD </li>
+                    <FaInfinity className={Style.footerIcon} />
+                </div>
             </ul>
         </div>
     </div>
@@ -146,6 +145,10 @@ const Skills = () => {
                             <div className={Style.invisible}>
                                 <li>Network basics  </li>
                                 <VscJson className={Style.footerIcon} />
+                            </div>
+                            <div className={Style.invisible}>
+                                <li>Linux/Bash basics  </li>
+                                <FaLinux className={Style.footerIcon} />
                             </div>
                         </ul>
                         </div>
@@ -215,6 +218,14 @@ const Skills = () => {
                                 <li>NodeJs </li>
                                 <FaNodeJs className={Style.footerIcon} />
                             </div>
+                            <div className={back}>
+                                <li>Docker </li>
+                                <FaDocker className={Style.footerIcon} />
+                            </div>
+                            <div className={back}>
+                                <li>CI / CD </li>
+                                <FaInfinity className={Style.footerIcon} />
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -271,6 +282,10 @@ const Skills = () => {
                             <div className={other}>
                                 <li>Network basics  </li>
                                 <VscJson className={Style.footerIcon} />
+                            </div>
+                            <div className={Style.invisible}>
+                                <li>Linux/Bash basics  </li>
+                                <FaLinux className={Style.footerIcon} />
                             </div>
                         </ul>
                     </div>
