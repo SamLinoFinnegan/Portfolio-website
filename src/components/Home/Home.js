@@ -2,7 +2,7 @@ import React from "react";
 import Style from './Home.module.css';
 import python from './../../img/python-3d.png'
 import magGlass from './../../img/mag.png'
-import cv from './../../doc/Sam. L Finnegan Curriculum.docx';
+import cv from './../../doc/Sam. L Finnegan Curriculum .pdf';
 import {FiDownload} from "react-icons/fi"
 import { Link } from 'react-router-dom'
 import Form from './../Forms/Form'
