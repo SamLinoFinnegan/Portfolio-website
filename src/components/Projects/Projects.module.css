@@ -13,7 +13,10 @@
     margin-bottom: 7%;
 }
 
-
+span{
+    font-size: 1em;
+    opacity: 0.7;
+}
 
 
 .projects .container .inner_container{
