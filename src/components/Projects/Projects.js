@@ -73,7 +73,7 @@ const Projects = () => {
             <div className={Style.mainText}>
                 <h1>These are some of the projects ive done</h1>
                 <div>
-                    <h2>Front-End projects <span>(All these projects have been made using HTML, CSS and Javascript)</span></h2>
+                    <h2>Front-End projects  <span>  (All these projects have been made using HTML, CSS and Javascript)</span></h2>
                 </div>
             </div>
             <motion.div ref={container} className={Style.container}>
