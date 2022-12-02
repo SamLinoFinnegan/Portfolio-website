@@ -46,7 +46,7 @@ const Projects = () => {
         img: dash,
         alt: "Student DashBoard",
         href: 'https://competent-kowalevski-f9e3cb.netlify.app',
-        text: "One page aplication Dashboard, with student database"
+        text: "One page aplication Dashboard, with student database with Javascript"
     }
     
     const todo_obj = {
@@ -59,7 +59,7 @@ const Projects = () => {
         img: api,
         alt:"GOF Api",
         href: 'https://gifted-swanson-6454ad.netlify.app',
-        text: "Fetching async data from an API"
+        text: "Fetching async data from an API with Javascript"
     }
     
     const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,todo_obj,api_obj]
@@ -73,7 +73,7 @@ const Projects = () => {
             <div className={Style.mainText}>
                 <h1>These are some of the projects ive done</h1>
                 <div>
-                    <h2>Front-End projects</h2>
+                    <h2>Front-End projects (All these projects have been made using HTML, CSS and Javascript)</h2>
                 </div>
             </div>
             <motion.div ref={container} className={Style.container}>
