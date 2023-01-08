@@ -9,7 +9,9 @@
 }
 .samText{
     max-width: 50%;
-    padding-left: 3em;
+    margin: auto;
+    font-size: 1.2em;
+   
     
 
 }
@@ -36,9 +38,9 @@ span{
     color: rgb(48, 130, 238);
 }
 
-.samImg, .larissaImg{
-    min-width: 25em;   
-    max-width: 25em; 
+.samImg{
+    min-width: 20em;   
+    max-width: 20em; 
     
 }
 .samImg img, .larissaImg img{
@@ -59,7 +61,7 @@ span{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        min-height: 3150px;
+        
         
     }
     .samImg, .larissaImg{

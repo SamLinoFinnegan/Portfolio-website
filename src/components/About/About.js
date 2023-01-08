@@ -1,7 +1,7 @@
 import React from "react";
 import Style from './About.module.css';
 import me from './../../img/me.jpeg';
-import larissa from './../../img/larissa.JPG';
+
 
 
 
@@ -29,6 +29,8 @@ const About = () => {
 
                         From an early age ,I've always loved computer games as well as trying to hack websites and friends' accounts <span role="img" aria-label="smile">😋</span>.
                         <br/>
+                        I always liked opening up the computer to see how things worked under the hood and by the time i got to my teens i had already built my own computer.
+                        <br/>
                         I can say technology has always been a subject of interest and passion for me.
                         <br/>
 
@@ -44,37 +46,7 @@ const About = () => {
 
                 </div>
             </div>
-            <div className={Style.midText}>
-                <h2>I work in colaboration for web and app UI/UX design, with: </h2>
-            </div>
-            <div className={Style.aboutLarissaContainer}>
-                <div className={Style.larissaImg}>
-                    <a href={larissa} alt="Larissa">
-                        <img src={larissa} alt="Larissa"></img>
-                    </a>
-                </div>
-                
-                <div className={Style.larissaText}>
-                    <h1>Larissa Arnold</h1>
-                    <p><span>UX designer</span>, sports nutritionist, self-taught knowledge addict.
-                    <br/>
-                    <br/>
-                        Design has always been present in my life in a very intuitive way.
-                        <br/>
-
-                        Since I was a child, I always liked to organize my things in a more practical manner, always picking the right color and clothes based on the mood or purpose, always having a conscious meaning, over time I realized that the excess of decorations, items, and information bothered me.
-                        <br/>
-                    
-                        While in nutrition school, I started using diet and exercise calculator apps, I noticed that a lot of the functionality was difficult to use and understand, and several of my colleagues were also facing the same difficulties using these tools, so I thought: <i>"If these specific functionalities had other names or if I had a clearer way of interacting with them, maybe it would be easier to use, and we wouldn't waste soo much time"</i>.
-                        <br/>
-                        At that moment, I wanted to propose a solution, but I didn't know how.
-                        <br/>
-                        
-                        Then I discovered UX design and its importance in retaining attention and facilitating the user experience, turning websites and apps into a comfortable place to be. I enrolled in the Coursera UX design course and try every day to stay updated and pay attention to what users say and get insights to think about improvements
-                    </p>
-
-                </div>                
-            </div>
+            
         </div>
     );
 }
