@@ -15,19 +15,25 @@
     
     
 }
-.pythonImg {
+.pythonImg, .reactImg {
     width: 100%;
-    animation: fadeIn 4s ease-in-out infinite;   
+    animation: fadeIn 10s ease-in-out infinite;   
     margin: 10px;
+    position: absolute;
+    
+}
+.reactImg{
+    animation-delay: 5s; 
+    opacity: 0;
 }
 
-@keyframes fadeIn {
-    0% {opacity:0.5; }
 
-   
-    50% {opacity: 1;transform: translateY(-10px);}
+@keyframes fadeIn {
+    0% {opacity:0; transform: scale(0.5); }
+
+    50% {opacity: 0.9;transform: scale(1);}
     
-    100% {opacity:0.5;}
+    100% {opacity:0; transform: scale(0.5);}
     
   }
 

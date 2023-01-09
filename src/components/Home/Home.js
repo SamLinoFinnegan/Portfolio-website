@@ -1,6 +1,7 @@
 import React from "react";
 import Style from './Home.module.css';
 import python from './../../img/python-3d.png'
+import react_logo from './../../img/react_logo.png'
 import magGlass from './../../img/mag.png'
 import cv from './../../doc/Sam. L Finnegan Curriculum.pdf';
 import {FiDownload} from "react-icons/fi"
@@ -21,7 +22,7 @@ const Home = () => {
                     </h2>
                     
                     <h1>
-                    <span>Full-stack developer</span> , with passion for learning and developing <span>Python</span>
+                    <span>Full-stack developer</span> , with passion for learning and developing in <span>Python</span> and <span>React JS</span>
 
                     </h1>
                 </div>
@@ -51,6 +52,7 @@ const Home = () => {
 
             <div className={Style.pythonContainer}>
                 <img className={Style.pythonImg} src={python} alt="Python logo"></img>
+                <img className={Style.reactImg} src={react_logo} alt="React logo"></img>
             </div>
             </div>
             <div className={Style.formSectionContainer}>
