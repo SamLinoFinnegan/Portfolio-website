@@ -7,7 +7,7 @@ import cv from './../../doc/Sam. L Finnegan Curriculum.pdf';
 import {FiDownload} from "react-icons/fi"
 import { Link } from 'react-router-dom'
 import Form from './../Forms/Form'
-
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
 
@@ -17,14 +17,16 @@ const Home = () => {
             <div className={Style.homeContainer}>
             <div className={Style.searchDownloadText}>
                 <div className={Style.intro}>
-                    <h2>
-                    Hello World, I'm Sam Finnegan
-                    </h2>
-                    
-                    <h1>
-                    <span>Full-stack developer</span> , with passion for learning and developing in <span>Python</span> and <span>React JS</span>
-
-                    </h1>
+                    <Typewriter onInit={(typewriter)=>typewriter
+                    .changeDelay(75)
+                    .typeString("<h2>Hello World, I'm Sam Finnegan</h2>")
+                    .pauseFor(2000)
+                    .changeDelay(60)
+                    .typeString("<h1><span>A Full-stack developer </span>, with passion for developing and learning <span>Python</span> and <span>React.JS</span></h1>")
+                    .pauseFor(1000)
+                    .typeString("<h2>Welcome to my Portfolio</h2>")
+                    .start()}/>
+                        
                 </div>
                 <div className={Style.searchDownload}>
                 <div >
