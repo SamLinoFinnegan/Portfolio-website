@@ -2,13 +2,16 @@ import React from "react";
 import Style from './Form.module.css';
 import plane from './../../img/send_icon.png'
 
-export default function Form() {
+export default function Form(props) {
+
     return (
+     
       <form 
         method='post' 
         name='contactForm' 
         className={Style.contactForm}>
         <div className={Style.inputNameAndEmail}>
+        <label>{props.test}</label>
         <input type="hidden" name="form-name" value="contactForm" />
         <input 
           type='text' 
@@ -22,7 +25,7 @@ export default function Form() {
         </div>
         <textarea 
           name='message' 
-          placeholder='Messaage'></textarea>
+          placeholder='Message'></textarea>
   
         <button type='submit'>
             <div><img src={plane} alt="send icon"></img></div>
@@ -31,5 +34,6 @@ export default function Form() {
             </button>
   
       </form>
+      
     )
   }
