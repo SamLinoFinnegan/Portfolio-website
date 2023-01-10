@@ -18,12 +18,11 @@ const Home = () => {
             <div className={Style.searchDownloadText}>
                 <div className={Style.intro}>
                     <Typewriter onInit={(typewriter)=>typewriter
-                    .changeDelay(75)
+                    .changeDelay(50)
                     .typeString("<h2>Hello World, I'm Sam Finnegan</h2>")
-                    .pauseFor(2000)
-                    .changeDelay(60)
+                    .pauseFor(700)
                     .typeString("<h1><span>A Full-stack developer </span>, with passion for developing and learning <span>Python</span> and <span>React.JS</span></h1>")
-                    .pauseFor(1000)
+                    .pauseFor(700)
                     .typeString("<h2>Welcome to my Portfolio</h2>")
                     .start()}/>
                         
