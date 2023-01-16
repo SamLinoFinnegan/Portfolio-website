@@ -1,50 +1,81 @@
 .services{
     min-height: 800px;
+    display: block;
 }
-.container{
+.serviceHeader{
+    margin: 10%;
+}
+.container, .workWithContainer{
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     margin: 30px;
     
 }
-.box{
-    border: 2px rgb(8, 10, 22) solid;
-    border-radius: 5%;
-    background-color:#076cb6;
+
+.box, .box_prof{
+    min-height: 400px;
+    margin: 20px;
+    border: 2px #0a5185 solid;
+    background-color: #076cb6;
+    border-radius: 10%;
+    box-shadow:10px 8px 13px rgb(18, 18, 53);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
-    
+    align-items: center;
+    align-content: center;
 }
+.box:hover{
+    transform: translateY(4px);
+    cursor: pointer;
+}
+
+
+
 .box_img img{
     width: 100%;
     max-height: 200px;
-    border-radius: 5% 5% 0% 0%;
+    border-radius: 10% 10% 0% 0%;
 }
+
+.box_prof_img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        margin: 0;
+        top: -20px;
+        z-index: 9999;
+}
+
+
+.box_prof_img{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    
+}
+ 
+.box_prof_img_container{
+    display: flex;
+    justify-content: center;
+}
+
+
 .box_text{
     max-width: 300px;
-    
-    
-    
+     
 }
+
 .box_text h2, p{
-    padding: 15px;
+    padding: 30px;
 }
 
-.button{
-    padding:10px;
-    
 
-}
-.button button{
-    width: 80px;
-    height: 40px;
-    border-radius: 15%;
-    cursor: pointer;
-    
-}
 .displayServiceContainer{
     display: flex;
     justify-content: center;
@@ -54,9 +85,9 @@
     height: 250px;
     width: 600px;
     margin: 5%;
-    background-color: rgb(173, 173, 196);
-    border: rgb(6, 12, 36) 2px solid;
     border-radius: 5%;
+    background-color: #01142ca8;
+    border: 2px #0a5185 solid;
     display: flex;
     justify-content: center;
     padding-top: 5%;
@@ -66,7 +97,7 @@
 }
 
 @media screen and (max-width: 760px){
-    .container{
+    .container, .workWithContainer{
         display: flex;
         flex-direction: column;
     }

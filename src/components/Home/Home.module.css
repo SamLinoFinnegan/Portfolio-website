@@ -8,15 +8,73 @@
 
 }
 
-.pythonContainer{
+.corouselContainer{
     position: relative;
-    left: 5%;
-    width: 90%;
-    max-width: 450px;
+    width: 120px;
+    perspective: 1000px;
+    
     
     
 }
-.pythonImg, .reactImg {
+
+.pythonImg, .reactImg, .myImage {
+    background-color: #01142cf8;
+    border-radius: 10%;
+    width: 100%;  
+    height: 100%;
+    position: absolute;
+    
+
+}
+
+
+.carousel{
+    width: 210px;
+    height: 210px;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+    
+    
+}
+
+
+
+.pythonImg{
+    transform: rotateY(120deg) translateZ(60px);
+}
+
+.reactImg{
+    transform: rotateY(240deg) translateZ(60px);
+}
+.myImage{
+    transform: rotateY(360deg) translateZ(60px);
+}
+
+
+
+
+
+@keyframes rotate {
+    0%{
+        transform: rotateY(0deg); 
+    }
+
+    
+    100%{
+        transform: rotateY(360deg) ;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+/* .pythonImg, .reactImg {
     width: 100%;
     animation: fadeIn 25s ease-in-out infinite;   
     margin: 10px;
@@ -38,7 +96,7 @@
     80% {opacity: 0;}
     100% {opacity:0; transform: scale(0);}
     
-  }
+  } */
  
 .searchDownload{
     display: flex;
@@ -55,7 +113,7 @@
     
 }
 .intro{
-    min-width: 750px;
+    width: 950px;
     min-height: 400px;
 }
  h2{

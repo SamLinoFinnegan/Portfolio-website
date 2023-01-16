@@ -1,7 +1,8 @@
 import React from "react";
 import Style from './Home.module.css';
-import python from './../../img/python-3d.png'
+import python_logo from './../../img/python-3d.png'
 import react_logo from './../../img/react_logo.png'
+import my_logo from './../../img/my_new_logo.png'
 import magGlass from './../../img/mag.png'
 import cv from './../../doc/Sam. L Finnegan Curriculum.pdf';
 import {FiDownload} from "react-icons/fi"
@@ -40,9 +41,9 @@ const Home = () => {
                     </a>
                 </div>
                 <div  >
-                    <Link to='/skills' className={Style.toSkills}>
+                    <Link to='/services' className={Style.toSkills}>
                         <img src={magGlass} alt="Magnifying glass"></img>
-                        <p>Explore more</p>
+                        <p>Services</p>
                         
                     </Link>
                 </div>
@@ -50,9 +51,13 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className={Style.pythonContainer}>
-                <img className={Style.pythonImg} src={python} alt="Python logo"></img>
-                <img className={Style.reactImg} src={react_logo} alt="React logo"></img>
+            <div className={Style.carouselContainer}>
+                <div className={Style.carousel}>
+                    <img className={Style.pythonImg} src={python_logo} alt="Python logo"></img>
+                    <img className={Style.reactImg} src={react_logo} alt="React logo"></img>
+                    <img className={Style.myImage} src={my_logo} alt="React logo"></img>
+                    
+                </div>
             </div>
             </div>
             <div className={Style.formSectionContainer}>

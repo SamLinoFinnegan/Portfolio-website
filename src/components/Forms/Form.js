@@ -11,8 +11,9 @@ export default function Form(props) {
         name='contactForm' 
         className={Style.contactForm}>
         <div className={Style.inputNameAndEmail}>
-        <label>{props.test}</label>
+        
         <input type="hidden" name="form-name" value="contactForm" />
+        
         <input 
           type='text' 
           name='name' 

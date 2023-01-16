@@ -27,21 +27,19 @@ const About = () => {
                         <br/>
 
 
-                        From an early age ,I've always loved computer games as well as trying to hack websites and friends' accounts <span role="img" aria-label="smile">😋</span>.
+                        From an early age, I've always loved computer games as well as trying to hack websites and friends' accounts.
                         <br/>
-                        I always liked opening up the computer to see how things worked under the hood and by the time i got to my teens i had already built my own computer.
+                        I can say technology is not only a subject of interest for me, but one of my greatest passions. My passion is not merely superficial, rather it is in the nitty gritty details. An important moment of my early life was when I built my first computer at age 15.
                         <br/>
-                        I can say technology has always been a subject of interest and passion for me.
                         <br/>
-
-                        As I grew older, I started to travel the world and try to analyze the why we are who we are and what variables make us into the people we are. I noticed that I like being able to get problems and break them down to their smallest component, and then use logical thinking to create algorithms to then solve the same problems, that's when I decided to enroll in the Dutch coding school <a href="https://www.wincacademy.nl/">WincAcademy</a> , where I enrolled in their Full-stack developer course.
+                        As I grew older, I noticed that I like being able to get problems and break them down to their smallest component, and then use logical thinking to create algorithms to then solve the same problems, that's when I decided to enroll in the Dutch coding school  <a href="https://www.wincacademy.nl/">WincAcademy</a>, where I enrolled in their Full-stack developer course.
                         <br/>
-
-                        Apart from the different languages and technologies I've learned at <a href="https://www.wincacademy.nl/">WincAcademy</a>  I'm also studying to get my Google Cloud Associate engineer certificate, as well as the basics of Machine Learning and I have also completed the Cisco It Essentials course.
+                        <br/>
+                        Following <a href="https://www.wincacademy.nl/">WincAcademy</a>, I am currently working towards my Google Cloud Associate Engineer Certificate, having completed the Basics of Machine Learning course, and the Cisco-IT Essentials course.
                         <br/>
                         <br/>
 
-                        I truly believe that self-improvement of oneself and the world around us is why we are here. To be better today than yesterday, to do better. I always try to be proactive, I believe that time is one of life's most precious gifts so I really don't like just doing nothing.
+                        I am a believer of self-improvement, and strive to be better today than I was yesterday. I always try to be proactive, I believe that time is one of life's most precious gifts so I always try to make the most of it.
                     </p>
 
                 </div>

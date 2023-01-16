@@ -32,12 +32,12 @@ function NavBar() {
               <li className="nav-item">
                 <Link
                   exact
-                  to="/about"
+                  to="/services"
                   activeclassname="active"
                   className="nav-links"
-                  onClick={click ? handleClick : null}
+                 onClick={click ? handleClick : null}
                 >
-                  About
+                  Services
                 </Link>
               </li>
               <li className="nav-item">
@@ -65,12 +65,12 @@ function NavBar() {
               <li className="nav-item">
                 <Link
                   exact
-                  to="/services"
+                  to="/about"
                   activeclassname="active"
                   className="nav-links"
-                 onClick={click ? handleClick : null}
+                  onClick={click ? handleClick : null}
                 >
-                  Services
+                  About
                 </Link>
               </li>
             </ul>
