@@ -2,7 +2,7 @@ import React from "react";
 import Style from './Form.module.css';
 import plane from './../../img/send_icon.png'
 
-export default function Form(props) {
+export default function Form() {
 
     return (
      
@@ -13,7 +13,7 @@ export default function Form(props) {
         <div className={Style.inputNameAndEmail}>
         
         <input type="hidden" name="form-name" value="contactForm" />
-        
+
         <input 
           type='text' 
           name='name' 

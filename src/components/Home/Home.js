@@ -58,6 +58,9 @@ const Home = () => {
                     <img className={Style.myImage} src={my_logo} alt="React logo"></img>
                     
                 </div>
+                <div>
+                <img className={Style.pythonImg} src={python_logo} alt="Python logo"></img>
+                </div>
             </div>
             </div>
             <div className={Style.formSectionContainer}>

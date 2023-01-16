@@ -184,6 +184,9 @@ span{
     text-decoration: none;
     color: #f8ca29;
 }
+.pythonImg{
+    display: none;
+}
 @media screen and (max-width: 760px) {
     .homeContainer{
         width: 100%;
@@ -240,6 +243,7 @@ span{
         animation: none;
         opacity: 0.7;
         overflow: visible;
+        display: block;
         
     }
     .formSectionContainer {
