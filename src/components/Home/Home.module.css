@@ -239,7 +239,7 @@ span{
         display: none;
     }
     
-    .pythonImg{
+    /* .pythonImg{
         position: relative;
         top: 0px;
         right: -5px;
@@ -249,7 +249,7 @@ span{
         overflow: visible;
         display: block;
         
-    }
+    } */
     .formSectionContainer {
         padding: 5%;
     }
