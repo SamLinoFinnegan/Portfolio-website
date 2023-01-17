@@ -200,18 +200,20 @@ span{
     }
     .intro{
         min-width: unset;
-        min-height: 500px;
+        min-height: 400px;
+        max-width: 300px;
+        margin: 0px;
     }
     .intro h2 {
         font-size: 1em;
-        padding: 15%;
+        padding: 10%;
         
         
     }
     .intro h1{
         position: relative;
         width: 100%;
-        padding: 15%;
+        padding: 10%;
         font-size:1.7em;
     }
     .searchDownload{
@@ -235,7 +237,7 @@ span{
     .carousel{
         animation: none;
     }
-    .reactImg,.myImage, .pythonImg{
+    .reactImg,.myImage, .pythonImg,.carousel,.carouselContainer{
         display: none;
     }
     
