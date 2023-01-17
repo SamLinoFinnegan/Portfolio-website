@@ -45,7 +45,7 @@
         border-radius: 50%;
         position: absolute;
         margin: 0;
-        top: -20px;
+        top: -10px;
         z-index: 9999;
 }
 
@@ -63,18 +63,28 @@
 .box_prof_img_container{
     display: flex;
     justify-content: center;
+    background-color: rgb(62, 66, 94);
+    border-radius: 50%;
+
 }
 
 
 .box_text{
     max-width: 300px;
+    align-items: center;
      
 }
 
-.box_text h2, p{
-    padding: 30px;
-}
 
+.box_text h3{
+    padding: 5%;
+}
+.box_text p{
+    padding: 5%;
+    min-height: 70px;
+    width: 80%;
+    margin: auto;
+}
 
 .displayServiceContainer{
     display: flex;

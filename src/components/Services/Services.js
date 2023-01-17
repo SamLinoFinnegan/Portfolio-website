@@ -3,11 +3,11 @@ import Style from './Services.module.css';
 import webdesign from './../../img/Webdesign.png'
 import camera from './../../img/camera.jpg'
 import classes from './../../img/class.jpg'
-// import male_avatar from './../../img/my_avatar.png'
-// import val_avatar from './../../img/val_avatar.jpg'
-// import larissa_avatar from './../../img/larissa.png'
+import male_avatar from './../../img/my_avatar.png'
+import val_avatar from './../../img/val_avatar.jpg'
+import larissa_avatar from './../../img/larissa.png'
 import Form from './../Forms/Form'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Services = () =>{
 
@@ -53,7 +53,7 @@ const Services = () =>{
                     </div>
                     <div className={Style.box_text}>
                         <h2>Free-lance Webdesign</h2>
-                        <p>If you are looking for a website, or would like to renew or change and excisting website, i would love to hear about it and help you out</p>
+                        <p>If you are looking for a website, or would like to renew, change or improve the user experience of your website, i would love to hear about it and help you out</p>
                     </div>
                 </div>
                 <div id="Coding tutorial" onClick={handleClick} className={Style.box}>
@@ -79,7 +79,62 @@ const Services = () =>{
                 <div className={services}>
                     {content}
                 </div>
-            </div>            
+            </div>
+            <div className={Style.serviceHeader}>
+                <h1>The Team</h1>
+            </div>
+            <div className={Style.workWithContainer}>
+                <div className={Style.box_prof}>
+                        <div className={Style.box_prof_img_container}>
+                            <div className={Style.box_prof_img}>
+                                <img src={larissa_avatar} alt="Larissa Arnold"></img>
+                            </div>
+                        </div>
+                        <div className={Style.box_prof_name}>
+                            <h2>Larissa Arnold</h2>
+                        </div>
+                        <div className={Style.box_text}>
+                            
+                            <h3>UX/UI Designer</h3>
+                            <p>Design has always been present in my life in a very intuitive way. Then I discovered how UX design matters and its importance in retaining attention</p> 
+                            <p><a href="https://www.behance.net/larissaarnold">Check out my projects</a></p>
+                        </div>
+                            
+                    </div>
+
+                    <div className={Style.box_prof}>
+                        <div className={Style.box_prof_img_container}>
+                            <div className={Style.box_prof_img}>
+                                <img src={val_avatar} alt="Valorie"></img>
+                            </div>
+                        </div>
+                        <div className={Style.box_prof_name}>
+                            <h2>Valerie Ni Raigne</h2>
+                        </div>
+                        <div className={Style.box_text}>
+                            <h3>Photographer</h3>
+                            <p>I Buzz with Mother Nature, life is all about capturing the moments</p>
+                            <p><a href="https://instagram.com/photoworks77?igshid=YmMyMTA2M2Y=">Check out my Instagram</a></p>
+                        </div>
+                        
+                    </div>
+                    <div className={Style.box_prof}>
+                        <div className={Style.box_prof_img_container}>
+                            <div className={Style.box_prof_img}>
+                                <img src={male_avatar} alt="Samuel Finnegan"></img>
+                            </div>
+                        </div>
+                        <div className={Style.box_prof_name}>
+                            <h2>Sam Finnegan</h2>
+                        </div>
+                        <div className={Style.box_text}>
+                        <h3>Programmer</h3>
+                        <p>+3 As a Full-stack developer, I love finding problems so i can come up with a solution.</p>
+                        <Link to='/about'><p>About Me</p></Link>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     )
 }
