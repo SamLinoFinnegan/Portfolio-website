@@ -202,7 +202,7 @@ span{
         min-width: unset;
         min-height: 400px;
         max-width: 300px;
-        margin: 0px;
+        margin: 3%;
     }
     .intro h2 {
         font-size: 1em;
@@ -221,37 +221,36 @@ span{
     }
     .downloadBtn, .toSkills{
         font-size: 0.7em;
-        width: 120px;
-        height: 35px;
+        width: 145px;
+        height: 50px;
         margin: 0px;
+        display: flex;
+        justify-content: space-evenly;
     }
     .downloadBtn{
-        margin-right: 1.5rem;
+        margin-right: 1.1rem;
     }
     .toSkills img{
         max-width: 18px;
         max-height: 18px;
-        padding: 8px;
+        padding: 10px;
+        margin-left: 5px;
         
     }
+
     .carousel{
         animation: none;
+        
     }
-    .reactImg,.myImage, .pythonImg,.carousel,.carouselContainer{
+    .myHidenImage{
+        width: 35px;
+        height: 35px;
+        
+    }
+    .reactImg, .pythonImg, .myImage{
         display: none;
     }
     
-    /* .pythonImg{
-        position: relative;
-        top: 0px;
-        right: -5px;
-        width: 230px;
-        transform: unset;
-        opacity: 0.7;
-        overflow: visible;
-        display: block;
-        
-    } */
     .formSectionContainer {
         padding: 5%;
     }
