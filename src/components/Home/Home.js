@@ -16,6 +16,7 @@ const Home = () => {
     return (
         <div className={Style.home}>
             <div className={Style.homeContainer}>
+            
             <div className={Style.searchDownloadText}>
                 <div className={Style.intro}>
                     <Typewriter onInit={(typewriter)=>typewriter
@@ -28,25 +29,25 @@ const Home = () => {
                         
                 </div>
                 <div className={Style.searchDownload}>
-                <div >
-                    <a 
-                    className={Style.downloadBtn}
-                    href={cv} download="Samuel. L Curriculum .pdf"
-                    target="blank"
+                    <div >
+                        <a 
+                        className={Style.downloadBtn}
+                        href={cv} download="Samuel. L Curriculum .pdf"
+                        target="blank"
 
-                    >
-                    <FiDownload/>
-                    <p>Download CV</p>
-                    
-                    </a>
-                </div>
-                <div  >
-                    <Link to='/services' className={Style.toSkills}>
-                        <img src={magGlass} alt="Magnifying glass"></img>
-                        <p>Services</p>
+                        >
+                        <FiDownload/>
+                        <p>Download CV</p>
                         
-                    </Link>
-                </div>
+                        </a>
+                    </div>
+                    <div  >
+                        <Link to='/services' className={Style.toSkills}>
+                            <img src={magGlass} alt="Magnifying glass"></img>
+                            <p>Services</p>
+                            
+                        </Link>
+                    </div>
                 
                 </div>
             </div>

@@ -72,12 +72,18 @@
 .box_text{
     max-width: 300px;
     align-items: center;
+    padding: 3%;
      
 }
-
-
+.box_text a:hover{
+    color: #f8ca29;
+}
+.box_text a{
+    text-decoration: none;
+}
 .box_text h3{
     padding: 5%;
+    color: #f8ca29;
 }
 .box_text p{
     padding: 5%;

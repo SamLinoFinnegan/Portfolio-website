@@ -55,15 +55,34 @@
 }
 .backend_images{
     width: 25%;
-    padding-bottom: 5%;
-    
-    
+    padding: 2%;
+    border: 2px #0a5185 solid;
+    background-color: #076db66b;
+    border-radius: 5%;
+    box-shadow:10px 8px 13px rgb(18, 18, 53);
+    margin-bottom: 10%;
+}
+.backend_images:hover{
+    transform: translateY(4px);
+}
+.backend_images p{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 5%;
+}
+.backend_images p a:hover{
+    color: #f8ca29;
 }
 .backend_images a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     text-decoration: none;
 }
 .backend_items{
-    width: 100%;
+    
+    width: 90%;
     height: 9em;
     border-radius: 3%;
     border: 2px solid rgb(62, 66, 94);

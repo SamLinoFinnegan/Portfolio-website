@@ -25,7 +25,7 @@ const Projects = () => {
         img: movie,
         alt: "IMBD",
         href: 'https://angry-wing-f800c4.netlify.app',
-        text: "IMDB made with Vanila JavaScript"
+        text: "Movie streaming website with Vanila JavaScript"
 
     }
     const muscle_obj = {
@@ -46,14 +46,14 @@ const Projects = () => {
         img: dash,
         alt: "Student DashBoard",
         href: 'https://competent-kowalevski-f9e3cb.netlify.app',
-        text: "One page aplication Dashboard, with student database with Javascript"
+        text: "Student Dashboard, with student data as input using Javascript"
     }
     
     const todo_obj = {
         img: todo,
         alt: "Todo List", 
         href: 'https://happy-villani-0e3ea1.netlify.app',
-        text: "JavaScript TODO list doing HTTP requests to local server"
+        text: "JavaScript CRUD app making HTTP requests to local server"
     }
     const api_obj = {
         img: api,
@@ -92,22 +92,22 @@ const Projects = () => {
                 </div>
                 <div className={Style.backend_images_container}>
                     <div className={Style.backend_images}>
-                            <a href='https://github.com/SamLinoFinnegan/Back-end.git'>
+                            <a href={SuperPy}>
                                 <img className={Style.backend_items} src={SuperPy} alt="SuperPy - Python App"></img>
-                                <p className={Style.text}>SuperPy - Supermarket administration CLI app, with optional GUI</p>
                             </a>
+                            <p className={Style.text}><a href='https://github.com/SamLinoFinnegan/Back-end.git'>SuperPy - Supermarket administration CLI app, with optional GUI</a></p>
                     </div>
                     <div className={Style.backend_images}>
-                        <a href={'https://github.com/SamLinoFinnegan/Betsy-webshop.git'}>
+                        <a href={Orm}>
                             <img className={Style.backend_items} src={Orm} alt="Orm database"></img>
-                            <p className={Style.text}>A ORM modeling program in Python to Read/Write/Query SQL database, with a Flask front-end interface  </p>
                         </a>
+                        <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/Betsy-webshop.git'}>A ORM modeling program in Python to Read/Write/Query SQL database, with a Flask front-end interface</a></p>
                     </div>
                     <div className={Style.backend_images}>
                         <a href={side_project}>
                             <img className={Style.backend_items} src={side_project} alt="CRUD"></img>
-                            <p className={Style.text}>New project, CRUD application with a React front-end, and a Python back-end, wrapped in a Docker container with a Redis cash </p>
                         </a>
+                        <p className={Style.text}>New project, CRUD application with a React front-end, and a Python back-end, wrapped in a Docker container with a Redis cash </p>
                     </div>
                 </div>
             </div>

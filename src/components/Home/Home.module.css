@@ -30,8 +30,8 @@
 
 
 .carousel{
-    width: 18em;
-    height: 18em;
+    width: 20em;
+    height: 20em;
     transform-style: preserve-3d;
     animation: rotate 20s linear infinite;
 }
@@ -39,14 +39,14 @@
 
 
 .pythonImg{
-    transform: rotateY(120deg) translateZ(83px);
+    transform: rotateY(120deg) translateZ(93px);
 }
 
 .reactImg{
-    transform: rotateY(240deg) translateZ(83px);
+    transform: rotateY(240deg) translateZ(93px);
 }
 .myImage{
-    transform: rotateY(360deg) translateZ(83px);
+    transform: rotateY(360deg) translateZ(93px);
 }
 
 
