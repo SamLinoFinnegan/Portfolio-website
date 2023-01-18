@@ -142,12 +142,13 @@ span{
  .toSkills:hover{
     transform: translateY(-7px);
 }
-
+.toSkills{
+    display: flex;
+    justify-content: space-evenly;
+}
 .toSkills img{
     max-width: 24px;
     max-height: 24px;
-    padding-left: 20px;
-    
 }
 .toSkills p{
     width: 100px;
