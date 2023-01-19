@@ -13,7 +13,7 @@
     position: relative;
     width: 120px;
     perspective: 1000px;
-    
+
     
 }
 
@@ -34,6 +34,7 @@
     height: 20em;
     transform-style: preserve-3d;
     animation: rotate 20s linear infinite;
+    margin: 5%;
 }
 
 
@@ -104,7 +105,7 @@
     
 }
 .intro{
-    width: 650px;
+    width: 700px;
     min-height: 400px;
 }
  h2{
