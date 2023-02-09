@@ -46,7 +46,7 @@ const Projects = () => {
         img: dash,
         alt: "Student DashBoard",
         href: 'https://competent-kowalevski-f9e3cb.netlify.app',
-        text: "Student Dashboard, with student data as input using Javascript"
+        text: "Student Dashboard, with student data as input using React.js"
     }
     
     const todo_obj = {
@@ -59,7 +59,7 @@ const Projects = () => {
         img: api,
         alt:"GOF Api",
         href: 'https://gifted-swanson-6454ad.netlify.app',
-        text: "Fetching async data from an API with Javascript"
+        text: "Fetching async data from an API with JavaScript"
     }
     
     const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,todo_obj,api_obj]
