@@ -5,7 +5,7 @@ import movie from './../../img/MovieList.jpg';
 import muscle from './../../img/MuscleCars.jpg';
 import play from './../../img/PlayList.jpg';
 import dash from './../../img/StudentDashBoard.jpg';
-import todo from './../../img/TodoList.jpg';
+import larissaPortfolio from './../../img/larissa-portfolio.png';
 import api from './../../img/Api.jpg';
 import SuperPy from './../../img/SuperPy.png';
 import Orm from './../../img/Orm.png'
@@ -49,11 +49,11 @@ const Projects = () => {
         text: "Student Dashboard, with student data as input using React.js"
     }
     
-    const todo_obj = {
-        img: todo,
-        alt: "Todo List", 
-        href: 'https://happy-villani-0e3ea1.netlify.app',
-        text: "JavaScript CRUD app making HTTP requests to local server"
+    const larri_port_obj = {
+        img: larissaPortfolio,
+        alt: "Larissa Arnold", 
+        href: 'larissaarnold.com',
+        text: "Profecional UX/UI designer Portfolio website "
     }
     const api_obj = {
         img: api,
@@ -62,7 +62,7 @@ const Projects = () => {
         text: "Fetching async data from an API with JavaScript"
     }
     
-    const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,todo_obj,api_obj]
+    const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,larri_port_obj,api_obj]
     let the_projects = projects_obj.map(item => {
         return <Project img={item.img} alt={item.alt} href={item.href} text={item.text} />
     })
