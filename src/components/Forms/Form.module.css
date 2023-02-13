@@ -6,6 +6,11 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .error{
+    color: red;
+    padding-right: 10px;
+  }
   .inputNameAndEmail{
     display: flex;
     justify-content: space-between;

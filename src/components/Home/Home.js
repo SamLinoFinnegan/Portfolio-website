@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Style from './Home.module.css';
 import python_logo from './../../img/python-3d.png';
 import react_logo from './../../img/react_logo.png';
@@ -12,6 +12,24 @@ import Typewriter from 'typewriter-effect';
 
 const Home = () => {
 
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setIsLoading(false);
+            }, []);
+
+    const intro = useMemo(() => (
+           
+          <Typewriter onInit={(typewriter)=>typewriter
+            .changeDelay(40)
+            .typeString("<h2>Hello World, I'm Sam Finnegan</h2>")
+            .typeString("<h1><span>A Full-stack developer </span>, with passion for developing and learning <span>Python</span> and <span>React.JS</span></h1>")
+            .pauseFor(700)
+            .typeString("<h2>Welcome to my Portfolio</h2>")
+            .start()}/>
+           
+        
+      ), []);
 
     return (
         <div className={Style.home}>
@@ -19,14 +37,7 @@ const Home = () => {
             
             <div className={Style.searchDownloadText}>
                 <div className={Style.intro}>
-                    <Typewriter onInit={(typewriter)=>typewriter
-                    .changeDelay(40)
-                    .typeString("<h2>Hello World, I'm Sam Finnegan</h2>")
-                    .typeString("<h1><span>A Full-stack developer </span>, with passion for developing and learning <span>Python</span> and <span>React.JS</span></h1>")
-                    .pauseFor(700)
-                    .typeString("<h2>Welcome to my Portfolio</h2>")
-                    .start()}/>
-                        
+                {!isLoading ? intro : null}
                 </div>
                 <div className={Style.searchDownload}>
                     <div >
