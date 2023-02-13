@@ -11,7 +11,7 @@ export default function Form() {
   const [errors, setErrors] = useState({});
 
   const handleSubmit = e => {
-    e.preventDefault();
+    
 
     // Validate form inputs
     let formErrors = {};
