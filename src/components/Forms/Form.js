@@ -48,10 +48,13 @@ export default function Form() {
       method='post' 
       name='contactForm' 
       className={Style.contactForm}
-      onSubmit={handleSubmit}>
+      onSubmit={handleSubmit}
+      data-netlify="true"
+      data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contactForm" />
+      <input type="hidden" name="bot-field" />
       <div className={Style.inputNameAndEmail}>
-        <input type="hidden" name="form-name" value="contactForm" />
-        <input 
+          <input 
           type='text' 
           name='name' 
           placeholder='Enter your name' 
