@@ -11,19 +11,22 @@ export default function Form() {
   const [errors, setErrors] = useState({});
 
   const handleSubmit = e => {
-    e.preventDefault();
+    
 
     // Validate form inputs
     let formErrors = {};
     if (!formData.name) {
+      e.preventDefault();
       formErrors.name = "Name is required";
     }
     if (!formData.email) {
       formErrors.email = "Email is required";
+      e.preventDefault();
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       formErrors.email = "Email is invalid";
     }
     if (!formData.message) {
+      e.preventDefault();
       formErrors.message = "Message is required";
     }
 

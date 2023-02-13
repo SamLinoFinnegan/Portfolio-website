@@ -40,7 +40,7 @@ const Home = () => {
                 {!isLoading ? intro : null}
                 </div>
                 <div className={Style.searchDownload}>
-                    <div >
+                    <div>
                         <a 
                         className={Style.downloadBtn}
                         href={cv} download="Samuel. L Curriculum .docx"
@@ -52,8 +52,8 @@ const Home = () => {
                         
                         </a>
                     </div>
-                    <div  >
-                        <Link to='/services' className={Style.toSkills}>
+                    <div>
+                        <Link exact to='/services' className={Style.toSkills}>
                             <img src={magGlass} alt="Magnifying glass"></img>
                             <p>Services</p>
                             
