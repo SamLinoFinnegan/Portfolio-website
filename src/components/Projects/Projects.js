@@ -53,7 +53,7 @@ const Projects = () => {
         img: larissaPortfolio,
         alt: "Larissa Arnold", 
         href: 'http://larissaarnold.com',
-        text: "Profecional UX/UI designer Portfolio website "
+        text: "Professional UI/UX designer Portfolio website"
     }
     const api_obj = {
         img: api,
