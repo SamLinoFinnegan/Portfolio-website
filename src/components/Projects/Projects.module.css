@@ -52,6 +52,7 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .backend_images{
     width: 25%;

@@ -1,7 +1,7 @@
 import {React, useEffect, useRef, useState} from "react";
 import Project from "./../Project/Project";
 import Style from './Projects.module.css';
-import movie from './../../img/MovieList.jpg';
+import movie from './../../img/MovieList.png';
 import muscle from './../../img/MuscleCars.jpg';
 import play from './../../img/PlayList.jpg';
 import dash from './../../img/StudentDashBoard.jpg';
@@ -10,6 +10,7 @@ import api from './../../img/Api.jpg';
 import SuperPy from './../../img/SuperPy.png';
 import Orm from './../../img/Orm.png'
 import side_project from "./../../img/Side_project.jpg"
+import git_actions from "./../../img/git-actions.png"
 import {motion} from 'framer-motion';
 
 
@@ -108,6 +109,12 @@ const Projects = () => {
                             <img className={Style.backend_items} src={side_project} alt="CRUD"></img>
                         </a>
                         <p className={Style.text}>New project, CRUD application with a React front-end, and a Python back-end, wrapped in a Docker container with a Redis cash </p>
+                    </div>
+                    <div className={Style.backend_images}>
+                        <a href={git_actions}>
+                            <img className={Style.backend_items} src={git_actions} alt="git-actions"></img>
+                        </a>
+                        <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/My-Proxy.git'}>CI / CD pipeline with git-actions to automaticaly deploy to server on push</a></p>
                     </div>
                 </div>
             </div>
