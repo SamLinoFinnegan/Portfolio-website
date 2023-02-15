@@ -8,7 +8,7 @@ import {motion} from 'framer-motion'
 const Project = (props) =>{
     return (
         <motion.div className={Style.images}>
-            <a href={props.href}>
+            <a className={Style.imgParent} href={props.href}>
                 <img className={Style.movieList} src={props.img} alt={props.alt}></img>
             </a>
             <a href={props.href}>
