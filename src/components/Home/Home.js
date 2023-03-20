@@ -4,7 +4,7 @@ import python_logo from './../../img/python-3d.png';
 import react_logo from './../../img/react_logo.png';
 import my_logo from './../../img/my_new_logo.png';
 import magGlass from './../../img/mag.png';
-import cv from './../../doc/Sam. L Finnegan Curriculum.docx';
+import cv from './../../doc/Sam L Finnegan.pdf';
 import {FiDownload} from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import Form from './../Forms/Form';
@@ -43,7 +43,7 @@ const Home = () => {
                     <div>
                         <a 
                         className={Style.downloadBtn}
-                        href={cv} download="Samuel. L Curriculum .docx"
+                        href={cv} download="Samuel L Finnegan.pdf"
                         target="blank"
 
                         >
