@@ -1,4 +1,4 @@
-import React , { useState } from "react";
+import React , { useState, lazy, Suspense } from "react";
 import Style from './Services.module.css';
 import webdesign from './../../img/Webdesign.png'
 import camera from './../../img/camera.jpg'
@@ -6,40 +6,30 @@ import classes from './../../img/class.jpg'
 import male_avatar from './../../img/my_avatar.png'
 import val_avatar from './../../img/val_avatar.jpg'
 import larissa_avatar from './../../img/larissa.png'
-import Form from './../Forms/Form'
 import { Link } from 'react-router-dom'
 
+const Form = lazy(() => import('./../Forms/Form'));
+
 const Services = () =>{
+  let [toggle, togleService] = useState(false)
+  let [service, changeService] = useState()
+  let services = toggle ? Style.displayServicesVisible : Style.nothing
+  let content = toggle ? (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Form name={service} />
+    </Suspense>
+  ) : null
 
-    let [toggle, togleService] = useState(false)
-    let [service, changeService] = useState()
-
-    let services = toggle ? Style.displayServicesVisible :Style.nothing
-
-
-    
-    let content = toggle ? <Form name={service} /> : null
-  
-    
-    
-    
-    
-    
-
-    const handleScroll = (con) => {
-        const element = document.getElementById("services")
-        return con ? element.scrollIntoView({behavior:"smooth"}): null
-        
-    }
-    const handleClick = (event) =>{
-        let answer = event.currentTarget.id
-        
-        changeService(answer)
-        handleScroll(true)
-        togleService(current => ! current) 
-        
-       
-    }
+  const handleScroll = (con) => {
+    const element = document.getElementById("services")
+    return con ? element.scrollIntoView({behavior:"smooth"}) : null
+  }
+  const handleClick = (event) =>{
+    let answer = event.currentTarget.id
+    changeService(answer)
+    handleScroll(true)
+    togleService(current => !current) 
+  }
 
     return(
         <div className={Style.services}>

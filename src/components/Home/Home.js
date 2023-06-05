@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Style from './Home.module.css';
+<<<<<<< HEAD
 import python_logo from './../../img/python-3d.png'
 import react_logo from './../../img/react_logo.png'
 import my_logo from './../../img/my_new_logo.png'
@@ -8,10 +9,38 @@ import cv from './../../doc/Sam. L Finnegan Curriculum.docx';
 import {FiDownload} from "react-icons/fi"
 import { Link } from 'react-router-dom'
 import Form from './../Forms/Form'
+=======
+import python_logo from './../../img/python-3d.png';
+import react_logo from './../../img/react_logo.png';
+import my_logo from './../../img/my_new_logo.png';
+import magGlass from './../../img/mag.png';
+import cv from './../../doc/Samuel_L_Finnegan.pdf';
+import {FiDownload} from "react-icons/fi";
+import { Link } from 'react-router-dom';
+import Form from './../Forms/Form';
+>>>>>>> d0c8fb14960eca445ebd27d0af21c44014aac9d0
 import Typewriter from 'typewriter-effect';
 
 const Home = () => {
 
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setIsLoading(false);
+            }, []);
+
+    const intro = useMemo(() => (
+           
+          <Typewriter onInit={(typewriter)=>typewriter
+            .changeDelay(40)
+            .typeString("<h2>Hello World, I'm Sam Finnegan</h2>")
+            .typeString("<h1><span>A Full-stack developer </span>, with passion for developing and learning <span>Python</span> and <span>React.JS</span></h1>")
+            .pauseFor(700)
+            .typeString("<h2>Welcome to my Portfolio</h2>")
+            .start()}/>
+           
+        
+      ), []);
 
     return (
         <div className={Style.home}>
@@ -19,20 +48,13 @@ const Home = () => {
             
             <div className={Style.searchDownloadText}>
                 <div className={Style.intro}>
-                    <Typewriter onInit={(typewriter)=>typewriter
-                    .changeDelay(40)
-                    .typeString("<h2>Hello World, I'm Sam Finnegan</h2>")
-                    .typeString("<h1><span>A Full-stack developer </span>, with passion for developing and learning <span>Python</span> and <span>React.JS</span></h1>")
-                    .pauseFor(700)
-                    .typeString("<h2>Welcome to my Portfolio</h2>")
-                    .start()}/>
-                        
+                {!isLoading ? intro : null}
                 </div>
                 <div className={Style.searchDownload}>
-                    <div >
+                    <div>
                         <a 
                         className={Style.downloadBtn}
-                        href={cv} download="Samuel. L Curriculum .pdf"
+                        href={cv} download="Samuel L Finnegan.pdf"
                         target="blank"
 
                         >
@@ -41,8 +63,8 @@ const Home = () => {
                         
                         </a>
                     </div>
-                    <div  >
-                        <Link to='/services' className={Style.toSkills}>
+                    <div>
+                        <Link exact to='/services' className={Style.toSkills}>
                             <img src={magGlass} alt="Magnifying glass"></img>
                             <p>Services</p>
                             

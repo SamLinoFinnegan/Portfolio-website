@@ -22,8 +22,12 @@
     justify-content: center;
     text-decoration: none;
 }
+.imgParent{
+    height: 150px;
+}
 .images img{
     width: 90%;
+    height: 100%;
     border-radius: 5%;
     border: 1px solid rgb(62, 66, 94);
     cursor: pointer;

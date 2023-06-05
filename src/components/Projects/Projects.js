@@ -1,16 +1,22 @@
 import {React, useEffect, useRef, useState} from "react";
 import Project from "./../Project/Project";
 import Style from './Projects.module.css';
-import movie from './../../img/MovieList.jpg';
+import movie from './../../img/MovieList.png';
 import muscle from './../../img/MuscleCars.jpg';
 import play from './../../img/PlayList.jpg';
 import dash from './../../img/StudentDashBoard.jpg';
-import todo from './../../img/TodoList.jpg';
+import larissaPortfolio from './../../img/larissa-portfolio.png';
 import api from './../../img/Api.jpg';
 import SuperPy from './../../img/SuperPy.png';
+<<<<<<< HEAD
 import Rent_bot from './../../img/rent_bot.png';
 import Orm from './../../img/Orm.png';
 import side_project from "./../../img/Side_project.jpg";
+=======
+import Orm from './../../img/Orm.png'
+import side_project from "./../../img/Side_project.jpg"
+import git_actions from "./../../img/git-actions.png"
+>>>>>>> d0c8fb14960eca445ebd27d0af21c44014aac9d0
 import {motion} from 'framer-motion';
 
 
@@ -50,11 +56,11 @@ const Projects = () => {
         text: "Student Dashboard, with student data as input using React.js"
     }
     
-    const todo_obj = {
-        img: todo,
-        alt: "Todo List", 
-        href: 'https://happy-villani-0e3ea1.netlify.app',
-        text: "JavaScript CRUD app making HTTP requests to local server"
+    const larri_port_obj = {
+        img: larissaPortfolio,
+        alt: "Larissa Arnold", 
+        href: 'http://larissaarnold.com',
+        text: "Professional UI/UX designer Portfolio website"
     }
     const api_obj = {
         img: api,
@@ -63,7 +69,7 @@ const Projects = () => {
         text: "Fetching async data from an API with JavaScript"
     }
     
-    const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,todo_obj,api_obj]
+    const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,larri_port_obj,api_obj]
     let the_projects = projects_obj.map(item => {
         return <Project img={item.img} alt={item.alt} href={item.href} text={item.text} />
     })
@@ -111,10 +117,17 @@ const Projects = () => {
                         <p className={Style.text}>New project, CRUD application with a React front-end, and a Python back-end, wrapped in a Docker container with a Redis cash </p>
                     </div>
                     <div className={Style.backend_images}>
+<<<<<<< HEAD
                             <a href={Rent_bot}>
                                 <img className={Style.backend_items} src={Rent_bot} alt="Rent Bot"></img>
                             </a>
                             <p className={Style.text}><a href='https://github.com/SamLinoFinnegan/Rent_bot.git'>This project is a script that uses Selenium to search a rental site and automatically send requests for ads that meet the required parameters.</a></p>
+=======
+                        <a href={git_actions}>
+                            <img className={Style.backend_items} src={git_actions} alt="git-actions"></img>
+                        </a>
+                        <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/My-Proxy.git'}>CI / CD pipeline with git-actions to automaticaly deploy to server on push</a></p>
+>>>>>>> d0c8fb14960eca445ebd27d0af21c44014aac9d0
                     </div>
                 </div>
             </div>
