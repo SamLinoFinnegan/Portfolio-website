@@ -112,18 +112,19 @@ const Projects = () => {
                         <p className={Style.text}>New project, CRUD application with a React front-end, and a Python back-end, wrapped in a Docker container with a Redis cash </p>
                     </div>
                     <div className={Style.backend_images}>
-
-                            <a href={Rent_bot}>
-                                <img className={Style.backend_items} src={Rent_bot} alt="Rent Bot"></img>
-                            </a>
-                            <p className={Style.text}><a href='https://github.com/SamLinoFinnegan/Rent_bot.git'>This project is a script that uses Selenium to search a rental site and automatically send requests for ads that meet the required parameters.</a></p>
-
                         <a href={git_actions}>
                             <img className={Style.backend_items} src={git_actions} alt="git-actions"></img>
                         </a>
                         <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/My-Proxy.git'}>CI / CD pipeline with git-actions to automaticaly deploy to server on push</a></p>
 
                     </div>
+                    <div className={Style.backend_images}>
+                        <a href={Rent_bot}>
+                            <img className={Style.backend_items} src={Rent_bot} alt="Rent Bot"></img>
+                        </a>
+                        <p className={Style.text}><a href='https://github.com/SamLinoFinnegan/Rent_bot.git'>This project is a script that uses Selenium to search a rental site and automatically send requests for ads that meet the required parameters.</a></p>
+                    </div>
+                
                 </div>
             </div>
         </div>
