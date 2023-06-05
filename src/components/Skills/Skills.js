@@ -9,331 +9,153 @@ import mec from "./../../img/mechanism.png"
 import frontImg from "./../../img/front-end.png"
 import dots from "./../../img/3dots.png"
 
-
-
 const Skills = () => {
-    
+  const [active, setActive] = useState({ backend: false, frontend: false, other: false });
+  const [skills, setSkills] = useState();
 
-
-    let [backIsActive, setBack] = useState(false)
-    let [frontIsActive, setFront] = useState(false)
-    let [otherIsActive, setOther] = useState(false)
-    
-    
- 
-   
-
-    let back = backIsActive ? Style.visible :Style.footerIcon_container
-    let front = frontIsActive ? Style.visible :Style.footerIcon_container
-    let other = otherIsActive ? Style.visible :Style.footerIcon_container
-
-    let backgroundback = backIsActive ? Style.background :Style.list
-    let backgroundfront = frontIsActive ? Style.background :Style.list
-    let backgroundother = otherIsActive ? Style.background :Style.list
-
-    
-
-    const handleClick = (event) =>{
-       
-        let answer = event.currentTarget.id
+const handleSkills = (event) => {
+    const id = event.currentTarget.id;
+    switch (id){
+      case "BackEnd":
+        setSkills(
+          <SkillSection title="Backend" image={mec} skills={backendSkills} />
+        )
         
-        if (answer === "Backend"){
-            
-            setBack(current => ! current)
-            setFront(false)
-            setOther(false)
-        }else if (answer === "Frontend"){
-            setFront(current => !current)
-            setOther(false)
-            setBack(false)
-        }else if (answer === "Other"){
-            setOther(current => !current)
-            setFront(false)
-            setBack(false)
-        }
-       
-      
-        
+        break;
+      case "FrontEnd":
+        setSkills(
+          <SkillSection title="Backend" image={mec} skills={backendSkills} />
+        )
+        break;
+      case "Other":
+      setSkills(
+        <SkillSection title="Backend" image={mec} skills={backendSkills} />
+      )
+      break;
+      default:
+        setSkills(
+          <SkillSection title="Backend" image={mec} skills={backendSkills} />
+        )
     }
-    
-    const backend = <div className={Style.list2}>
-    <div id="Backend" className={Style.background2} >
-            <div className={Style.listImg}>
-                <img src={mec} alt="Gears"></img>
-            </div>
-            <ul>
-                <li className={Style.compSkillTitle}>Back-End</li>
-                <div className={Style.invisible}>
-                    <li>Python  </li>
-                    <SiPython className={Style.footerIcon} />
-                </div>
-                <div className={Style.invisible}>
-                    <li>Flask </li>
-                    <SiFlask className={Style.footerIcon} />
-                </div>
-             <div className={Style.invisible}>
-                    <li>SQL </li>
-                    <GrMysql className={Style.footerIcon} />
-                </div>
-                <div className={Style.invisible}>
-                    <li>NodeJs </li>
-                    <FaNodeJs className={Style.footerIcon} />
-                </div>
-                <div className={Style.invisible}>
-                    <li>Docker </li>
-                    <FaDocker className={Style.footerIcon} />
-                </div>
-                <div className={back}>
-                    <li>CI / CD </li>
-                    <FaInfinity className={Style.footerIcon} />
-                </div>
-            </ul>
-        </div>
-    </div>
 
-    const frontend =<div className={Style.list2}>
-    <div id="Frontend" className={Style.background2} >
+  }
+
+
+
+  const handleClick = (event) => {
+    const id = event.currentTarget.id;
+    setActive((prevState) => ({ ...prevState, [id.toLowerCase()]: !prevState[id.toLowerCase()] }));
+  };
+
+  const SkillSection = ({ title, image, skills }) => (
+    <div className={Style.list}>
+      <div id={title} className={Style.background} onClick={handleClick}>
         <div className={Style.listImg}>
-            <img src={frontImg} alt="front-end"></img>
+          <img src={image} alt={title} />
         </div>
         <ul>
-            <li className={Style.compSkillTitle}>Front-End</li>
-            <div className={Style.invisible}>
-                <li>HTML </li>
-                <AiFillHtml5 className={Style.footerIcon} />
+          <li className={Style.compSkillTitle}>{title}</li>
+          {skills.map((skill, index) => (
+            <div key={index} className={active[title.toLowerCase()] ? Style.invisible : Style.footerIcon_container}>
+              <li>{skill.name}</li>
+              {skill.icon}
             </div>
-            <div className={Style.invisible}>
-                <li>JavaScript Native </li>
-                <SiJavascript className={Style.footerIcon} />
-            </div>
-            <div className={Style.invisible}>
-                <li>CSS/sass </li>
-                <FaSass className={Style.footerIcon} />
-            </div>
-            <div className={Style.invisible}>
-                <li>ReactJS </li>
-                <FaReact className={Style.footerIcon} />
-            </div>
-            <div className={Style.invisible}>
-                <li>Redux </li>
-                <SiRedux className={Style.footerIcon} />
-            </div>
+          ))}
         </ul>
+      </div>
     </div>
-</div>
+  );
 
-    const otherSkill = <div className={Style.list2}>
-                        <div id="Other" className={Style.background2} >
-                            <div className={Style.listImg}>
-                                <img src={dots} alt="Other"></img>
-                            </div>
-                        
-                        <ul>
-                            <li className={Style.compSkillTitle}>Other Skills</li>
-                            <div className={Style.invisible}>
-                                <li>Git  </li>
-                                <FaGithub className={Style.footerIcon} />
-                            </div>
-                            <div className={Style.invisible}>
-                                <li>Unit testing / Jest  </li>
-                                <SiJest className={Style.footerIcon} />
-                            </div>
-                            <div className={Style.invisible}>
-                                <li>Fetch and APIs </li>
-                                <FaPizzaSlice className={Style.footerIcon} />
-                            </div>
-                            <div className={Style.invisible}>
-                                <li>Network basics  </li>
-                                <VscJson className={Style.footerIcon} />
-                            </div>
-                            <div className={Style.invisible}>
-                                <li>Linux/Bash basics  </li>
-                                <FaLinux className={Style.footerIcon} />
-                            </div>
-                        </ul>
-                        </div>
+  const backendSkills = [
+    { name: "Python", icon: <SiPython className={Style.footerIcon} /> },
+    { name: "Flask", icon: <SiFlask className={Style.footerIcon} /> },
+    { name: "SQL", icon: <GrMysql className={Style.footerIcon} /> },
+    { name: "NodeJs", icon: <FaNodeJs className={Style.footerIcon} /> },
+    { name: "Docker", icon: <FaDocker className={Style.footerIcon} /> },
+    { name: "CI / CD", icon: <FaInfinity className={Style.footerIcon} /> },
+  ];
 
-                    </div>
-
-
+  const frontendSkills = [
+    { name: "HTML", icon: <AiFillHtml5 className={Style.footerIcon} /> },
+    { name: "CSS / SASS", icon: <FaSass className={Style.footerIcon} /> },
+    { name: "JavaScript", icon: <SiJavascript className={Style.footerIcon} /> },
+    { name: "React", icon: <FaReact className={Style.footerIcon} /> },
+    { name: "Redux", icon: <SiRedux className={Style.footerIcon} /> },
+    ];
     
+    const otherSkills = [
+    { name: "Git", icon: <FaGithub className={Style.footerIcon} /> },
+    { name: "Jest", icon: <SiJest className={Style.footerIcon} /> },
+    { name: "JSON", icon: <VscJson className={Style.footerIcon} /> },
+    { name: "Linux", icon: <FaLinux className={Style.footerIcon} /> },
+    { name: "Fetch and APIs", icon: <FaPizzaSlice className={Style.footerIcon} />}
+    ];
     
-    let [skill, upDateSkill] = useState(backend)      
-
-
-    const putSkill = (event) => {
-        let answer = event.target.innerText;
-        if (answer === "BackEnd") {
-            upDateSkill(backend)
-        } else if (answer === "FrontEnd") {
-            upDateSkill(frontend)
-        } else if (answer === "Other") {
-            upDateSkill(otherSkill)
-        }
-    }
-
-
     return (
-        <div className={Style.skills}>
-            <div className={Style.skillText}>
-                <h2>I'm a lifelong learner and enjoy learning new stuff! <br/>Below are some programming languages, toolkits, frameworks, and libraries that I've worked with and like. Some I control better than others.</h2>
-                        
-            </div>
-            
-            <div className={Style.button_container}>
+    <div className={Style.skills}>
+        <div className={Style.skillText}>
+            <h2>I'm a lifelong learner and enjoy learning new stuff! <br/>Below are some programming languages, toolkits, frameworks, and libraries that I've worked with and like. Some I control better than others.</h2>      
+        </div>
+        <div className={Style.button_container}>
                 <div>
-                    <button onClick={putSkill}>BackEnd</button>
+                    <button id="BackEnd" onClick={handleSkills}>BackEnd</button>
                 </div>
                 <div>
-                    <button onClick={putSkill}>FrontEnd</button>
+                    <button id="FrontEnd" onClick={handleSkills}>FrontEnd</button>
                 </div>
                 <div>
-                    <button onClick={putSkill}>Other</button>
+                    <button id="Other" onClick={handleSkills}>Other</button>
                 </div>
             </div>
             <div className={Style.list_container}>
-                {skill}
+                {skills}
             </div>
-            <div className={Style.skillComp}>
-                <div>
-                <div id="Backend" className={backgroundback} onClick={handleClick}>
-                        <div className={Style.listImg}>
-                            <img src={mec} alt="Gears"></img>
-                        </div>
-                        <ul>
-                            <li className={Style.compSkillTitle}>Back-End</li>
-                            <div className={back}>
-                                <li>Python  </li>
-                                <SiPython className={Style.footerIcon} />
-                            </div>
-                            <div className={back}>
-                                <li>Flask </li>
-                                <SiFlask className={Style.footerIcon} />
-                            </div>
-                         <div className={back}>
-                                <li>SQL </li>
-                                <GrMysql className={Style.footerIcon} />
-                            </div>
-                            <div className={back}>
-                                <li>NodeJs </li>
-                                <FaNodeJs className={Style.footerIcon} />
-                            </div>
-                            <div className={back}>
-                                <li>Docker </li>
-                                <FaDocker className={Style.footerIcon} />
-                            </div>
-                            <div className={back}>
-                                <li>CI / CD </li>
-                                <FaInfinity className={Style.footerIcon} />
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div id="Frontend" className={backgroundfront} onClick={handleClick}>
-                        <div className={Style.listImg}>
-                            <img src={frontImg} alt="front-end"></img>
-                        </div>
-                        <ul>
-                            <li className={Style.compSkillTitle}>Front-End</li>
-                            <div className={front}>
-                                <li>HTML </li>
-                                <AiFillHtml5 className={Style.footerIcon} />
-                            </div>
-                            <div className={front}>
-                                <li>JavaScript Native </li>
-                                <SiJavascript className={Style.footerIcon} />
-                            </div>
-                            <div className={front}>
-                                <li>CSS/sass </li>
-                                <FaSass className={Style.footerIcon} />
-                            </div>
-                            <div className={front}>
-                                <li>ReactJS </li>
-                                <FaReact className={Style.footerIcon} />
-                            </div>
-                            <div className={front}>
-                                <li>Redux </li>
-                                <SiRedux className={Style.footerIcon} />
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                <div id="Other" className={backgroundother} onClick={handleClick}>
-                    <div className={Style.listImg}>
-                        <img src={dots} alt="Other"></img>
-                    </div>
-                        
-                        <ul>
-                            <li className={Style.compSkillTitle}>Other Skills</li>
-                            <div className={other}>
-                                <li>Git  </li>
-                                <FaGithub className={Style.footerIcon} />
-                            </div>
-                            <div className={other}>
-                                <li>Unit testing / Jest  </li>
-                                <SiJest className={Style.footerIcon} />
-                            </div>
-                            <div className={other}>
-                                <li>Fetch and APIs </li>
-                                <FaPizzaSlice className={Style.footerIcon} />
-                            </div>
-                            <div className={other}>
-                                <li>Network basics  </li>
-                                <VscJson className={Style.footerIcon} />
-                            </div>
-                            <div className={other}>
-                                <li>Linux/Bash basics  </li>
-                                <FaLinux className={Style.footerIcon} />
-                            </div>
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-            <div className={Style.skillLangHead}>
+        <div className={Style.skillComp}>
+            <SkillSection title="Backend" image={mec} skills={backendSkills} />
+            <SkillSection title="Frontend" image={frontImg} skills={frontendSkills} />
+            <SkillSection title="Other" image={dots} skills={otherSkills} />
+        </div>
+        <div className={Style.skillLangHead}>
                 <h2>Human Languages</h2>
-            </div>
-            <div className={Style.skillLanguages}>
-                <div className={Style.languageContainer}>
-                    <div className={Style.languageItem}>
-                        <p>English</p>
-                        <p>
-                            C2
-                            <br/>
-                            Native
-                        </p>
-                    </div>
-                    <div className={Style.languageItem}>
-                        <p>Portuguese</p>
-                        <p>
+        </div>
+        <div className={Style.skillLanguages}>
+            <div className={Style.languageContainer}>
+                <div className={Style.languageItem}>
+                    <p>English</p>
+                    <p>
                         C2
                         <br/>
                         Native
-                        </p>
-                    </div>
-                    <div className={Style.languageItem}>
-                        <p>Spanish</p>
-                        <p>
-                        C1
-                        <br/>
-                        Fluent
-                        </p>  
-                    </div>
-                    <div className={Style.languageItem}>
-                        <p>Dutch</p>
-                        <p>
-                        B2
-                        <br/>
-                        Intermediate
-                        </p>
-                    </div>
+                    </p>
+                </div>
+                <div className={Style.languageItem}>
+                    <p>Portuguese</p>
+                    <p>
+                    C2
+                    <br/>
+                    Native
+                    </p>
+                </div>
+                <div className={Style.languageItem}>
+                    <p>Spanish</p>
+                    <p>
+                    C1
+                    <br/>
+                    Fluent
+                    </p>  
+                </div>
+                <div className={Style.languageItem}>
+                    <p>Dutch</p>
+                    <p>
+                    B2
+                    <br/>
+                    Intermediate
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
+    
     );
-}
-
-export default Skills;
+    };
+    export default Skills;

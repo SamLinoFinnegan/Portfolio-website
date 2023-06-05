@@ -8,8 +8,9 @@ import dash from './../../img/StudentDashBoard.jpg';
 import todo from './../../img/TodoList.jpg';
 import api from './../../img/Api.jpg';
 import SuperPy from './../../img/SuperPy.png';
-import Orm from './../../img/Orm.png'
-import side_project from "./../../img/Side_project.jpg"
+import Rent_bot from './../../img/rent_bot.png';
+import Orm from './../../img/Orm.png';
+import side_project from "./../../img/Side_project.jpg";
 import {motion} from 'framer-motion';
 
 
@@ -46,7 +47,7 @@ const Projects = () => {
         img: dash,
         alt: "Student DashBoard",
         href: 'https://competent-kowalevski-f9e3cb.netlify.app',
-        text: "Student Dashboard, with student data as input using Javascript"
+        text: "Student Dashboard, with student data as input using React.js"
     }
     
     const todo_obj = {
@@ -59,7 +60,7 @@ const Projects = () => {
         img: api,
         alt:"GOF Api",
         href: 'https://gifted-swanson-6454ad.netlify.app',
-        text: "Fetching async data from an API with Javascript"
+        text: "Fetching async data from an API with JavaScript"
     }
     
     const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,todo_obj,api_obj]
@@ -108,6 +109,12 @@ const Projects = () => {
                             <img className={Style.backend_items} src={side_project} alt="CRUD"></img>
                         </a>
                         <p className={Style.text}>New project, CRUD application with a React front-end, and a Python back-end, wrapped in a Docker container with a Redis cash </p>
+                    </div>
+                    <div className={Style.backend_images}>
+                            <a href={Rent_bot}>
+                                <img className={Style.backend_items} src={Rent_bot} alt="Rent Bot"></img>
+                            </a>
+                            <p className={Style.text}><a href='https://github.com/SamLinoFinnegan/Rent_bot.git'>This project is a script that uses Selenium to search a rental site and automatically send requests for ads that meet the required parameters.</a></p>
                     </div>
                 </div>
             </div>
