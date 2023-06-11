@@ -109,7 +109,7 @@ const Projects = () => {
                         <a href={side_project}>
                             <img className={Style.backend_items} src={side_project} alt="CRUD"></img>
                         </a>
-                        <p className={Style.text}>New project, CRUD application with a React front-end, and a Python back-end, wrapped in a Docker container with a Redis cash </p>
+                        <p className={Style.text}>New project, CRUD application with a React front-end, and a Python back-end, wrapped in a Docker container with a Redis cache </p>
                     </div>
                     <div className={Style.backend_images}>
                         <a href={git_actions}>
