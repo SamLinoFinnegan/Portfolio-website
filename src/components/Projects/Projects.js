@@ -6,7 +6,7 @@ import muscle from './../../img/MuscleCars.jpg';
 import play from './../../img/PlayList.jpg';
 import dash from './../../img/StudentDashBoard.jpg';
 import larissaPortfolio from './../../img/larissa-portfolio.png';
-import brainybin from './../../img/brainybin.png';
+import brainybin from './../../img/brainybin.jpg';
 import api from './../../img/Api.jpg';
 import SuperPy from './../../img/SuperPy.png';
 import Rent_bot from './../../img/rent_bot.png';
@@ -134,12 +134,12 @@ const Projects = () => {
                     <h3>These are some of the projects that i've built for clients and are currently in use</h3>
                 </div>
             </div>
-            <div className={Style.backend_images_container}>
+            <div className={Style.realworld_images_container}>
                 <div className={Style.backend_images}>
                         <a href={brainybin}>
-                            <img className={Style.backend_items} src={brainybin} alt="Rent Bot"></img>
+                            <img className={Style.backend_items} src={brainybin} alt="Brainy Bin"></img>
                         </a>
-                        <h1 className={Style.text}><a href='http://brainybin.com'>Brainybin </a></h1>
+                        <h2 className={Style.text}><a href='http://brainybin.com'>Brainybin </a></h2>
                         <p>This project uses Flask and Sqlite as an office tool to assist employees in correctly identifying the appropriate bins for disposing of their trash.</p>
                         <p>We are currently working on a mobile version that will use ML in order to identify the item through computer vision.</p>
                     </div>
