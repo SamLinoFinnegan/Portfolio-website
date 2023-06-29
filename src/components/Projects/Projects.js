@@ -6,6 +6,7 @@ import muscle from './../../img/MuscleCars.jpg';
 import play from './../../img/PlayList.jpg';
 import dash from './../../img/StudentDashBoard.jpg';
 import larissaPortfolio from './../../img/larissa-portfolio.png';
+import brainybin from './../../img/brainybin.png';
 import api from './../../img/Api.jpg';
 import SuperPy from './../../img/SuperPy.png';
 import Rent_bot from './../../img/rent_bot.png';
@@ -124,8 +125,25 @@ const Projects = () => {
                         </a>
                         <p className={Style.text}><a href='https://github.com/SamLinoFinnegan/Rent_bot.git'>This project is a script that uses Selenium to search a rental site and automatically send requests for ads that meet the required parameters.</a></p>
                     </div>
-                
+                    
                 </div>
+                <div className={Style.back_end_sorry_text}>
+                    <div>
+                        <h2>Real World applications</h2>
+                    </div>
+                    <h3>These are some of the projects that i've built for clients and are currently in use</h3>
+                </div>
+            </div>
+            <div className={Style.backend_images_container}>
+                <div className={Style.backend_images}>
+                        <a href={brainybin}>
+                            <img className={Style.backend_items} src={brainybin} alt="Rent Bot"></img>
+                        </a>
+                        <h1 className={Style.text}><a href='http://brainybin.com'>Brainybin </a></h1>
+                        <p>This project uses Flask and Sqlite as an office tool to assist employees in correctly identifying the appropriate bins for disposing of their trash.</p>
+                        <p>We are currently working on a mobile version that will use ML in order to identify the item through computer vision.</p>
+                    </div>
+
             </div>
         </div>
     );

@@ -72,7 +72,7 @@
     align-items:center;
     padding: 5%;
 }
-.backend_images p a:hover{
+.backend_images p a:hover,.backend_images h1 a:hover{
     color: #f8ca29;
 }
 .backend_images a{
