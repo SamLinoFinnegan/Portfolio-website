@@ -58,6 +58,9 @@
     display: flex;
     justify-content: center;
 }
+.realworld_images_container .backend_images p{
+    padding: 2%;
+}
 .backend_images{
     width: 25%;
     padding: 2%;
