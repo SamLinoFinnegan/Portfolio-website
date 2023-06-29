@@ -140,7 +140,7 @@ const Projects = () => {
                             <img className={Style.backend_items} src={brainybin} alt="Brainy Bin"></img>
                         </a>
                         <h2 className={Style.text}><a href='http://brainybin.com'>Brainybin </a></h2>
-                        <p>This project uses Flask and Sqlite as an office tool to assist employees in correctly identifying the appropriate bins for disposing of their trash.</p>
+                        <p>This project uses Flask and Sqlite, and works as an office tool to assist employees in correctly identifying the appropriate bins for disposing of their trash.</p>
                         <p>We are currently working on a mobile version that will use ML in order to identify the item through computer vision.</p>
                     </div>
 
