@@ -104,7 +104,7 @@ const Services = () =>{
                         <div className={Style.box_text}>
                             <h3>Photographer</h3>
                             <p>I Buzz with Mother Nature, life is all about capturing the moments</p>
-                            <p><a href="https://instagram.com/photoworks77?igshid=YmMyMTA2M2Y=">Check out my Instagram</a></p>
+                            <p><a href="http://valeriesgaleriephotography.ie">Check out my website</a></p>
                         </div>
                         
                     </div>
