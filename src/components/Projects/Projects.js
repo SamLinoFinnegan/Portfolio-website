@@ -134,7 +134,8 @@ const Projects = () => {
                     <a href={Rent_bot}>
                         <img className={Style.backend_items} src={Rent_bot} alt="Rent Bot"></img>
                     </a>
-                    <p className={Style.text}><a href='https://github.com/SamLinoFinnegan/Rent_bot.git'>This project is a script that uses Selenium to search a rental site and automatically send requests for ads that meet the required parameters.</a></p>
+                    <h2 className={Style.text}><a href='https://github.com/SamLinoFinnegan/Rent_bot.git'>Rent Bot</a></h2>
+                    <p className={Style.text}>This project is a script that uses Selenium to search a rental site and automatically send requests for ads that meet the required parameters.</p>
                 </div>
                 <div className={Style.backend_images}>
                         <a href={brainybin}>
