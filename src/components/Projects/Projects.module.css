@@ -64,6 +64,7 @@
 .backend_images{
     width: 25%;
     padding: 2%;
+    margin: 20px;
     border: 2px #0a5185 solid;
     background-color: #076db66b;
     border-radius: 5%;
@@ -144,5 +145,7 @@
     .realworld_images_container{
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 }

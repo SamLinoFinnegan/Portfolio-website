@@ -104,7 +104,7 @@ const Projects = () => {
                         <a href={Orm}>
                             <img className={Style.backend_items} src={Orm} alt="Orm database"></img>
                         </a>
-                        <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/Betsy-webshop.git'}>A ORM modeling program in Python to Read/Write/Query SQL database, with a Flask front-end interface</a></p>
+                        <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/Betsy-webshop.git'}>Betsy Webshop - A ORM modeling program in Python to Read/Write/Query SQL database, with a Flask front-end interface</a></p>
                     </div>
                     <div className={Style.backend_images}>
                         <a href={side_project}>
@@ -119,12 +119,7 @@ const Projects = () => {
                         <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/My-Proxy.git'}>CI / CD pipeline with git-actions to automaticaly deploy to server on push</a></p>
 
                     </div>
-                    <div className={Style.backend_images}>
-                        <a href={Rent_bot}>
-                            <img className={Style.backend_items} src={Rent_bot} alt="Rent Bot"></img>
-                        </a>
-                        <p className={Style.text}><a href='https://github.com/SamLinoFinnegan/Rent_bot.git'>This project is a script that uses Selenium to search a rental site and automatically send requests for ads that meet the required parameters.</a></p>
-                    </div>
+                    
                     
                 </div>
                 <div className={Style.back_end_sorry_text}>
@@ -135,6 +130,12 @@ const Projects = () => {
                 </div>
             </div>
             <div className={Style.realworld_images_container}>
+                <div className={Style.backend_images}>
+                    <a href={Rent_bot}>
+                        <img className={Style.backend_items} src={Rent_bot} alt="Rent Bot"></img>
+                    </a>
+                    <p className={Style.text}><a href='https://github.com/SamLinoFinnegan/Rent_bot.git'>This project is a script that uses Selenium to search a rental site and automatically send requests for ads that meet the required parameters.</a></p>
+                </div>
                 <div className={Style.backend_images}>
                         <a href={brainybin}>
                             <img className={Style.backend_items} src={brainybin} alt="Brainy Bin"></img>
