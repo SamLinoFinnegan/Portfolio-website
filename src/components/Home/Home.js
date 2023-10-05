@@ -78,7 +78,7 @@ const Home = () => {
                     <h1>Feel Free to <span>Contact Us</span> Via the <span>Contact Form</span></h1>
                 </div>
                 <div className={Style.formText}>
-                    <h3>For webdesign, software development and more.</h3>
+                    <h3>For web design, software development and more.</h3>
                     
                     <h3>Don't like forms? Send us an <a target="blanc" href="mailto: samuel.a.lino.sl@gmail.com" >email</a></h3>
                 </div>

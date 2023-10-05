@@ -74,7 +74,7 @@ const Projects = () => {
     return (
         <div className={Style.projects} id="projects">
             <div className={Style.mainText}>
-                <h1>These are some of the projects ive done</h1>
+                <h1>These are some of the projects I've done</h1>
                 <div>
                     <h2>Front-End projects  <span>  (All these projects have been made using HTML, CSS and Javascript)</span></h2>
                 </div>
@@ -98,13 +98,13 @@ const Projects = () => {
                             <a href={SuperPy}>
                                 <img className={Style.backend_items} src={SuperPy} alt="SuperPy - Python App"></img>
                             </a>
-                            <p className={Style.text}><a href='https://github.com/SamLinoFinnegan/Back-end.git'>SuperPy - Supermarket administration CLI app, with optional GUI</a></p>
+                            <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/Back-end.git'} target="_blank" rel="noreferrer">SuperPy - Supermarket administration CLI app, with optional GUI</a></p>
                     </div>
                     <div className={Style.backend_images}>
                         <a href={Orm}>
                             <img className={Style.backend_items} src={Orm} alt="Orm database"></img>
                         </a>
-                        <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/Betsy-webshop.git'}>Betsy Webshop - A ORM modeling program in Python to Read/Write/Query SQL database, with a Flask front-end interface</a></p>
+                        <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/Betsy-webshop.git'} target="_blank" rel="noreferrer">Betsy Webshop - A ORM modeling program in Python to Read/Write/Query SQL database, with a Flask front-end interface</a></p>
                     </div>
                     <div className={Style.backend_images}>
                         <a href={side_project}>
@@ -113,10 +113,10 @@ const Projects = () => {
                         <p className={Style.text}>New project, CRUD application with a React front-end, and a Python back-end, wrapped in a Docker container with a Redis cache </p>
                     </div>
                     <div className={Style.backend_images}>
-                        <a href={git_actions}>
+                        <a href={git_actions} >
                             <img className={Style.backend_items} src={git_actions} alt="git-actions"></img>
                         </a>
-                        <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/My-Proxy.git'}>CI / CD pipeline with git-actions to automaticaly deploy to server on push</a></p>
+                        <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/My-Proxy.git'} target="_blank" rel="noreferrer">CI / CD pipeline with git-actions to automaticaly deploy to server on push</a></p>
 
                     </div>
                     
@@ -131,14 +131,14 @@ const Projects = () => {
             </div>
             <div className={Style.realworld_images_container}>
                 <div className={Style.backend_images}>
-                    <a href={Rent_bot}>
+                    <a href={Rent_bot} target="_blank" rel="noreferrer">
                         <img className={Style.backend_items} src={Rent_bot} alt="Rent Bot"></img>
                     </a>
                     <h2 className={Style.text}><a href='https://github.com/SamLinoFinnegan/Rent_bot.git'>Rent Bot</a></h2>
                     <p className={Style.text}>This project is a script that uses Selenium to search a rental site and automatically send requests for ads that meet the required parameters.</p>
                 </div>
                 <div className={Style.backend_images}>
-                        <a href={brainybin}>
+                        <a href={brainybin} target="_blank" rel="noreferrer">
                             <img className={Style.backend_items} src={brainybin} alt="Brainy Bin"></img>
                         </a>
                         <h2 className={Style.text}><a href='http://brainybin.com'>Brainybin </a></h2>
