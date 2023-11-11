@@ -5,7 +5,7 @@ import movie from './../../img/MovieList.png';
 import muscle from './../../img/MuscleCars.jpg';
 import play from './../../img/PlayList.jpg';
 import dash from './../../img/StudentDashBoard.jpg';
-import crud from './../../img/crud.png'
+import crud from './../../img/crud.png';
 import larissaPortfolio from './../../img/larissa-portfolio.png';
 import brainybin from './../../img/brainybin.jpg';
 import api from './../../img/Api.jpg';
