@@ -22,7 +22,7 @@ const About = () => {
                         Hi, i'm Sam Finnegan
                     </h1>
                     <p>
-                        Programmer, gammer and world traveler
+                        Programmer, gamer and world traveler
                         <br/>
                         <br/>
 

@@ -5,6 +5,7 @@ import movie from './../../img/MovieList.png';
 import muscle from './../../img/MuscleCars.jpg';
 import play from './../../img/PlayList.jpg';
 import dash from './../../img/StudentDashBoard.jpg';
+import crud from './../../img/crud.png'
 import larissaPortfolio from './../../img/larissa-portfolio.png';
 import brainybin from './../../img/brainybin.jpg';
 import api from './../../img/Api.jpg';
@@ -23,7 +24,12 @@ const Projects = () => {
     useEffect(()=>{
         setWidth(container.current.scrollWidth - container.current.offsetWidth)
     },[])
-    
+    const crud_obj = {
+        img:crud,
+        alt:"CRUD employee management app",
+        href: "https://654faa0d3a81190008530893--comfy-cuchufli-881900.netlify.app/",
+        text:"Simple employee management CRUD app with React.js"
+    }
     const imbd_obj = {
         img: movie,
         alt: "IMBD",
@@ -65,7 +71,7 @@ const Projects = () => {
         text: "Fetching async data from an API with JavaScript"
     }
     
-    const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,larri_port_obj,api_obj]
+    const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,larri_port_obj,api_obj, crud_obj]
     let the_projects = projects_obj.map(item => {
         return <Project img={item.img} alt={item.alt} href={item.href} text={item.text} />
     })
@@ -76,7 +82,7 @@ const Projects = () => {
             <div className={Style.mainText}>
                 <h1>These are some of the projects I've done</h1>
                 <div>
-                    <h2>Front-End projects  <span>  (All these projects have been made using HTML, CSS and Javascript)</span></h2>
+                    <h2>Front-End projects  <span>  (All these projects have been made using HTML, CSS, Javascript and React.js)</span></h2>
                 </div>
             </div>
             <motion.div ref={container} className={Style.container}>
