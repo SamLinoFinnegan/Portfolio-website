@@ -12,6 +12,7 @@ import api from './../../img/Api.jpg';
 import SuperPy from './../../img/SuperPy.png';
 import Rent_bot from './../../img/rent_bot.png';
 import Orm from './../../img/Orm.png';
+import simple_api from './../../img/api.png'
 import side_project from "./../../img/Side_project.jpg";
 import git_actions from "./../../img/git-actions.png"
 import {motion} from 'framer-motion';
@@ -125,7 +126,13 @@ const Projects = () => {
                         <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/My-Proxy.git'} target="_blank" rel="noreferrer">CI / CD pipeline with git-actions to automaticaly deploy to server on push</a></p>
 
                     </div>
-                    
+                    <div className={Style.backend_images}>
+                        <a href={simple_api} >
+                            <img className={Style.backend_items} src={simple_api} alt="simple API"></img>
+                        </a>
+                        <p className={Style.text}><a href={'https://github.com/SamLinoFinnegan/simple-API.git'} target="_blank" rel="noreferrer">A simple API that facilitates interaction through HTTP requests.</a></p>
+
+                    </div>
                     
                 </div>
                 <div className={Style.back_end_sorry_text}>
