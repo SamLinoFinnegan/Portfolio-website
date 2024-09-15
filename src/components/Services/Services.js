@@ -61,7 +61,7 @@ const Services = () =>{
   ) : null
   let botText = toggleBot ? (
     <Suspense fallback={<div>Loading...</div>}>
-      <div>
+      <div className={Style.autobotText}>
         <div className={Style.Video}>
           <iframe src="https://www.youtube.com/embed/9_LO3h71bCs?si=bFyXh1YHCAeOXT0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
@@ -89,9 +89,10 @@ const Services = () =>{
         </ul>
 
         <p>Free up your team’s time, improve efficiency, and focus on what really drives your business forward. <span id="formOne" onClick={handleClick} className={Style.ctaButton}>Book your free consultation today</span> and discover how automation can transform your workflow.</p>
-
-        <div id="form1" className={servicesClass}>
-            {form}
+          <div id="services" className={Style.displayServiceContainer}>
+            <div id="form1" className={servicesClass}>
+                {form}
+            </div>
         </div>
       </div>
     </Suspense>
