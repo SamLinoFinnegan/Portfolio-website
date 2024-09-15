@@ -1,0 +1,149 @@
+.services{
+    min-height: 800px;
+    display: block;
+}
+.serviceHeader{
+    margin: 10%;
+}
+.container, .workWithContainer,.serviceHeader{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    
+}
+
+.box, .box_prof{
+    min-height: 400px;
+    margin: 20px;
+    border: 2px #0a5185 solid;
+    background-color: #076cb6;
+    border-radius: 10%;
+    box-shadow:10px 8px 13px rgb(18, 18, 53);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.box:hover{
+    transform: translateY(4px);
+    cursor: pointer;
+}
+
+
+
+.box_img img{
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10% 10% 0% 0%;
+}
+
+.box_prof_img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        margin: 0;
+        top: -10px;
+        z-index: 9999;
+}
+
+
+.box_prof_img{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    
+}
+ 
+.box_prof_img_container{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(62, 66, 94);
+    border-radius: 50%;
+
+}
+
+
+.box_text{
+    max-width: 300px;
+    align-items: center;
+    padding: 3%;
+     
+}
+.box_text a:hover{
+    color: #f8ca29;
+}
+.box_text a{
+    text-decoration: none;
+}
+.box_text h3{
+    padding: 5%;
+    color: #f8ca29;
+}
+.box_text p{
+    padding: 5%;
+    min-height: 70px;
+    width: 80%;
+    margin: auto;
+}
+
+.displayServiceContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+.displayServicesVisible{
+    height: 250px;
+    width: 600px;
+    margin: 5%;
+    border-radius: 5%;
+    background-color: #01142ca8;
+    border: 2px #0a5185 solid;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+.displayBotVisible{
+    height: fit-content;
+    width: fit-content;
+    margin: 5%;
+    border-radius: 5%;
+    background-color: #0c3465a8;
+    border: 4px #072d48 solid;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.Video{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+.Video iframe{
+    border-radius: 5%;
+}
+.nothing{
+    display:none;
+}
+
+@media screen and (max-width: 760px){
+    .container, .workWithContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+    .box_img img{
+        width: 100%;
+    }
+
+}

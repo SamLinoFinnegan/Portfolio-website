@@ -1,0 +1,86 @@
+.about{
+    margin: auto;
+    width: 90%;
+}
+.aboutSamContainer, .aboutLarissaContainer, .midText{
+    display: flex;
+    margin-top: 9%;
+    margin-bottom: 10%;
+}
+.samText{
+    max-width: 50%;
+    margin: auto;
+    font-size: 1.2em;
+   
+}
+.larissaText{
+    padding-left: 3em;
+}
+.larissaText p{
+    width: 60%;
+}
+.larissaText i{
+    color: #fcdf78;
+}
+.samText h1, .larissaText h1{
+    margin-bottom:2em ;
+}
+.samText p,.larissaText p{
+    padding-bottom: 10px;
+}
+.samText a{
+    text-decoration: none;
+    color: #f8ca29;
+}
+span{
+    color: rgb(48, 130, 238);
+}
+
+.samImg{
+    min-width: 20em;   
+    max-width: 20em; 
+    
+}
+.samImg img, .larissaImg img{
+    max-width: 100%;
+    border: 1px solid rgb(60, 61, 73) ;
+    border-radius: 10px;
+    box-shadow: 10px 8px 3px rgb(60, 61, 73);
+}
+
+@media screen and (max-width: 760px){
+
+    .aboutSamContainer, .aboutLarissaContainer, .midText, .about,.samImg, .larissaImg, .samText, .larissaText, .larissaText p{
+        all: unset;
+    }
+    .about{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        
+    }
+    .samImg, .larissaImg{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15%;
+        padding-top: 8%;
+
+    }
+    .samImg img, .larissaImg img{
+        width: 14em;
+    }
+    .samText p, .larissaText p{
+        font-size: 1.2em;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    
+
+   
+
+
+}

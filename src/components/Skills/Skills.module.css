@@ -1,0 +1,222 @@
+
+.skillText{
+    width: 70%;
+    margin: auto;
+    padding: 5%;
+    
+}
+.skillComp .list2, .background2, .invisible,.button_container{
+    display: none;
+}
+
+.skillComp{
+    display: flex;
+    justify-content: center;
+}
+.listImg img{
+    max-width: 50px;
+    
+
+    
+}
+.listImg{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.skillComp .list{
+    min-width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px #0a5185 solid;
+    border-radius: 10%;
+    box-shadow:10px 8px 13px rgb(18, 18, 53);
+    cursor: pointer;
+    
+    
+}
+.skillComp .list:hover .footerIcon_container{
+    visibility: visible;
+    
+}
+.visible{
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+.background{
+    transform: translateY(4px);
+    min-width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 4px #175988 solid;
+    border-radius: 10%;
+    box-shadow:16px 13px 17px rgb(18, 18, 53);
+    cursor: pointer;
+    background-color: #076cb6;
+}
+.skillComp .list:hover{
+    
+    background-color: #076cb6;
+}
+.compSkillTitle{
+    text-align: center;
+}
+.footerIcon_container{
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+      
+}
+
+.skillComp .list ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+
+}
+
+.skillComp .background ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+
+}
+
+.skillComp .list ul li{
+    padding: 10px;
+}
+
+.skillComp .background ul li{
+    padding: 10px;
+}
+.footerIcon{
+    color: white;
+}
+.skillLanguages, .skillLangHead{
+    width: 90%;
+    margin: auto;
+    
+}
+.skillLangHead h2{
+    margin: 5%;
+}
+.languageContainer{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.languageContainer div{
+    width: 300px;
+    border: 2px #012b5d solid;
+    background-color: #076cb6;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.languageContainer div:nth-child(1){
+    border-radius: 20px 0px 0px 20px;
+}
+.languageContainer div:nth-child(4){
+    border-radius: 0px 20px 20px 0px;
+}
+.languageContainer div p{
+    padding: 10%;
+    padding-bottom: 25%;
+    
+}
+@media screen and (max-width: 760px){
+    .skills{
+        min-height: 900px;
+    }
+    .skillText{
+        width: 80%;
+        margin: auto;
+    }
+    .skillText h2{
+        font-size: 1em;
+    }
+    .skillComp .list2{
+    
+        min-width: 200px;
+        min-height: 300px;
+        margin: 10px;
+        padding: 10px;
+        border: 2px #0a5185 solid;
+        border-radius: 10%;
+        box-shadow:10px 8px 13px rgb(18, 18, 53);
+        cursor: pointer;
+    }
+    .skillComp .list{
+        display: none;
+    }
+    .background2{
+        min-width: 200px;
+        min-height: 300px;
+        margin: 10px;
+        padding: 10px;
+        border: 3px #175988 solid;
+        border-radius: 10%;
+        box-shadow:16px 13px 17px rgb(18, 18, 53);
+        cursor: pointer;
+        background-color: #076cb6;
+    }
+    .invisible{
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 5%;
+    }
+    .background{
+      display: none;
+    }
+    .skillLangHead h2{
+        font-size: 1.5em;
+        text-align: center;
+        padding: 5%;
+    }
+    .skillComp .list2, .background2{
+        display: block;
+    }
+    .button_container{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+  
+    .skillLanguages{
+        width: 95%;
+    }
+    .languageItem{
+        max-width: 180px;
+        display: inline;
+    }
+    .languageContainer div p{
+        font-size: 0.7em;
+        padding: 8%;
+    }
+    .compSkillTitle{
+        list-style: none;
+    }
+    .button_container button{
+        min-width: 6em;
+        padding: 3px;
+        margin: 10px;
+        border: 2px solid #191c30;
+        border-radius: 10px;
+        background-color: #515580;
+        color: white;
+    }
+    .list_container{
+        width: 90%;
+        margin: auto;
+    }
+}

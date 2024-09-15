@@ -1,0 +1,62 @@
+
+
+.footer {
+    width: 100%;
+    border: #133c79 2px solid;
+    background-color: #022755;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+ .footerText{
+    margin-left: 30px;
+   
+ }
+ .footerText p{
+  padding-bottom: 10px;
+ }
+ .footerIcons {
+  margin-top: 30px;
+  width: 300px;
+  align-items: center;
+ }
+ .footerIcon{
+  float: right;
+  
+  padding: 5%;
+  width: 13.5%;
+  margin: auto;
+ }
+ .email {
+  padding: 3%;
+  text-align: center;
+  width: 100%;
+ }
+ .email a{
+  text-decoration: none;
+  color: #f8ca29;
+ }
+ .email p{
+  font-style: italic;
+  font-size: 0.6em;
+  
+  color: white;
+ }
+ @media screen and (max-width: 760px){
+  .footerText{
+    display: none;
+  }
+  .email a{
+    padding: 2px;
+    
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+  }
+  .footerIcon{
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+ }
