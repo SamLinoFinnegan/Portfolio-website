@@ -29,7 +29,7 @@ const Services = () =>{
     <Suspense fallback={<div>Loading...</div>}>
       <div>
         <div className={Style.Video}>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/9_LO3h71bCs?si=bFyXh1YHCAeOXT0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/9_LO3h71bCs?si=bFyXh1YHCAeOXT0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <h1>Automate Tedious Tasks with Custom Bots</h1>
         <p>In today’s fast-paced world, we all encounter repetitive tasks that drain valuable time and energy. Whether it’s logging into platforms to update files, manually reviewing spreadsheets, or double-checking data entries, these mundane chores can pull your team away from more important, creative, and strategic work.</p>

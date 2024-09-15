@@ -128,6 +128,8 @@
 }
 .Video iframe{
     border-radius: 5%;
+    width:560px;
+    height:315px;
 }
 .nothing{
     display:none;
@@ -147,7 +149,7 @@
     }
     .Video iframe{
         border-radius: 5%;
-        width: 80%;
+        width: 100%;
         height: 150px;
     }
 
