@@ -20,6 +20,40 @@ const Services = () =>{
   let [service, changeService] = useState()
   let botClass = toggleBot ? Style.displayBotVisible : Style.nothing
   let servicesClass = toggle ? Style.displayServicesVisible : Style.nothing
+
+  const handleScroll = (con, id) => {
+    const element = document.getElementById(id)
+    return con ? element.scrollIntoView({behavior:"smooth"}) : null
+  }
+  const handleClick = (event) =>{
+    let answer = event.currentTarget.id
+    
+    if (answer === "Automation-bots"){
+        if (!toggleBot){
+          handleScroll(true,"botText")
+        }
+       
+        togleBot(current => !current) 
+    }else if(answer === "formOne"){
+      changeService(answer)
+      if(!toggle){
+        handleScroll(true,"form1")
+      }
+      
+      togleService(current => !current) 
+    }else{
+        changeService(answer)
+        if(!toggle){
+          handleScroll(true,"services")
+        }
+        
+        togleService(current => !current) 
+    }
+    
+  }
+
+
+
   let form = toggle ? (
     <Suspense fallback={<div>Loading...</div>}>
       <Form name={service} />
@@ -54,28 +88,16 @@ const Services = () =>{
             <li><strong>Scalability:</strong> Whether you need to automate one task or a dozen, our bots are flexible and scalable, adapting as your business grows.</li>
         </ul>
 
-        <p>Free up your team’s time, improve efficiency, and focus on what really drives your business forward. <a href="#contact" class="cta-button">Book your free consultation today</a> and discover how automation can transform your workflow.</p>
+        <p>Free up your team’s time, improve efficiency, and focus on what really drives your business forward. <span id="formOne" onClick={handleClick} className={Style.ctaButton}>Book your free consultation today</span> and discover how automation can transform your workflow.</p>
+
+        <div id="form1" className={servicesClass}>
+            {form}
+        </div>
       </div>
     </Suspense>
   ) : null
 
-  const handleScroll = (con, id) => {
-    const element = document.getElementById(id)
-    return con ? element.scrollIntoView({behavior:"smooth"}) : null
-  }
-  const handleClick = (event) =>{
-    let answer = event.currentTarget.id
-    if (answer === "Automation-bots"){
-        handleScroll(true,"botText")
-        togleBot(current => !current) 
-    }else{
-        changeService(answer)
-        handleScroll(true,"services")
-        togleService(current => !current) 
-    }
-    
-  }
-
+  
   return (
     <div className={Style.services}>
       {/* Existing Services Section */}

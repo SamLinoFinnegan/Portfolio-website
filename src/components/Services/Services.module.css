@@ -134,6 +134,10 @@
 .nothing{
     display:none;
 }
+.ctaButton{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 760px){
     .container, .workWithContainer{
