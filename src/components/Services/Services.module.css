@@ -145,5 +145,10 @@
     .box_img img{
         width: 100%;
     }
+    .Video iframe{
+        border-radius: 5%;
+        width: 80%;
+        height: 150px;
+    }
 
 }
