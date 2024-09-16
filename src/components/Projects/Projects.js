@@ -38,12 +38,7 @@ const Projects = () => {
         text: "Movie streaming website with Vanila JavaScript"
 
     }
-    const muscle_obj = {
-        img: muscle,
-        alt:"Muscle cars",
-        href: 'https://friendly-banach-520c42.netlify.app',
-        text: "This was my first Website using just HTML and css"
-    }
+   
     const play_obj = {
         img: play,
         alt:"Play List",
@@ -65,14 +60,9 @@ const Projects = () => {
         href: 'http://larissaarnold.com',
         text: "Professional UI/UX designer Portfolio website"
     }
-    const api_obj = {
-        img: api,
-        alt:"GOF Api",
-        href: 'https://gifted-swanson-6454ad.netlify.app',
-        text: "Fetching async data from an API with JavaScript"
-    }
     
-    const projects_obj = [imbd_obj,muscle_obj,play_obj,dashboard_obj,larri_port_obj,api_obj, crud_obj]
+    
+    const projects_obj = [imbd_obj,play_obj,dashboard_obj,larri_port_obj, crud_obj]
     let the_projects = projects_obj.map(item => {
         return <Project img={item.img} alt={item.alt} href={item.href} text={item.text} />
     })
