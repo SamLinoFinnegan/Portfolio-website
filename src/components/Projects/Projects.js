@@ -2,13 +2,12 @@ import {React, useEffect, useRef, useState} from "react";
 import Project from "./../Project/Project";
 import Style from './Projects.module.css';
 import movie from './../../img/MovieList.png';
-import muscle from './../../img/MuscleCars.jpg';
 import play from './../../img/PlayList.jpg';
 import dash from './../../img/StudentDashBoard.jpg';
 import crud from './../../img/crud.png';
+import worldQuiz from './../../img/welcome_WorldQuiz.png'
 import larissaPortfolio from './../../img/larissa-portfolio.png';
 import brainybin from './../../img/brainybin.jpg';
-import api from './../../img/Api.jpg';
 import SuperPy from './../../img/SuperPy.png';
 import Rent_bot from './../../img/rent_bot.png';
 import Orm from './../../img/Orm.png';
@@ -25,6 +24,13 @@ const Projects = () => {
     useEffect(()=>{
         setWidth(container.current.scrollWidth - container.current.offsetWidth)
     },[])
+
+    const quiz_obj = {
+        img:worldQuiz,
+        alt:"A simple fun quiz game with homer simpson",
+        href:"https://github.com/SamLinoFinnegan/WorldQuiz.git",
+        text:"A fun, quiz game all about Homer Simpson and his Springfield antics!"
+    }
     const crud_obj = {
         img:crud,
         alt:"CRUD employee management app",
@@ -62,7 +68,7 @@ const Projects = () => {
     }
     
     
-    const projects_obj = [imbd_obj,play_obj,dashboard_obj,larri_port_obj, crud_obj]
+    const projects_obj = [imbd_obj,play_obj,dashboard_obj,quiz_obj,larri_port_obj, crud_obj]
     let the_projects = projects_obj.map(item => {
         return <Project img={item.img} alt={item.alt} href={item.href} text={item.text} />
     })
