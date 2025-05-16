@@ -1,52 +1,86 @@
 import React from "react";
-import Style from './About.module.css';
-import me from './../../img/me.jpeg';
-
-
-
-
-
+import Style from "./About.module.css";
+import me from "./../../img/me.jpeg";
+import gear from "./../../img/gear.png";
 
 const About = () => {
-    
-    return (
-        <div className={Style.about}>
-            <div className={Style.aboutSamContainer}>
-                <div className={Style.samImg}>
-                    <a href={me} alt="Just me">
-                        <img src={me} alt="me"></img>
-                    </a>
-                </div>
-                <div className={Style.samText}>
-                    <h1>
-                        Hi, i'm Sam Finnegan
-                    </h1>
-                    <p>
-                        Programmer, gamer and world traveler
-                        <br/>
-                        <br/>
-
-
-                        From an early age, I've always loved computer games as well as trying to hack websites and friends' accounts.
-                        <br/>
-                        I can say technology is not only a subject of interest for me, but one of my greatest passions. My passion is not merely superficial, rather it is in the nitty gritty details. An important moment of my early life was when I built my first computer at age 15.
-                        <br/>
-                        <br/>
-                        As I grew older, I noticed that I like being able to get problems and break them down to their smallest component, and then use logical thinking to create algorithms to then solve the same problems, that's when I decided to enroll in the Dutch coding school  <a href="https://www.wincacademy.nl/">WincAcademy</a>, where I enrolled in their Full-stack developer course.
-                        <br/>
-                        <br/>
-                        Following <a href="https://www.wincacademy.nl/">WincAcademy</a>, I am currently working towards my Google Cloud Associate Engineer Certificate, having completed the Basics of Machine Learning course, and the Cisco-IT Essentials course.
-                        <br/>
-                        <br/>
-
-                        I am a believer of self-improvement, and strive to be better today than I was yesterday. I always try to be proactive, I believe that time is one of life's most precious gifts so I always try to make the most of it.
-                    </p>
-
-                </div>
-            </div>
-            
+  return (
+    <div className={Style.about}>
+      <div className={Style.aboutSamContainer}>
+        <div className={Style.samImg}>
+          <a href={me} alt="Just me">
+            <img src={me} alt="me"></img>
+          </a>
         </div>
-    );
-}
+        <div className={Style.samTextCont}>
+          <div className={Style.samTextHeader}>
+            <h1>Hi, i'm Sam Finnegan</h1>
+            <h3>
+              Backend-First Engineer. Python Power-User. Security Enthusiast.
+            </h3>
+          </div>
+          <div className={Style.samText}>
+            <p>
+              From the moment I built my first PC at age 15, I was hooked — not
+              just on how things worked, but on how to make them work better.
+            </p>
+            <p>
+              What started with games and poking around web consoles grew into a
+              full-blown obsession with software engineering, security, and
+              solving hard problems with code.
+            </p>
+            <p>
+              Now, with 3+ years of experience, I specialize in backend systems
+              and security-focused architecture.
+            </p>
+            <p>
+              I love dissecting complex systems, mapping out their
+              vulnerabilities, and rebuilding them to be smarter, faster, and
+              safer.
+            </p>
+          </div>
+          <div className={Style.samTextUL}>
+            <div>
+              <img src={gear} alt="gear icon"></img>
+              <h3>I design and build:</h3>
+            </div>
+
+            <ul>
+              <li>
+                <p>Secure, modular backends using Python (Flask, Django)</p>
+              </li>
+              <li>
+                <p>Authenticated APIs and encrypted data pipelines</p>
+              </li>
+              <li>
+                <p>Session lifecycle managers and role-based access layers</p>
+              </li>
+              <li>
+                <p>Automated deployments using Docker, CI/CD, and GCP</p>
+              </li>
+            </ul>
+          </div>
+          <div className={Style.samText}>
+            <p>
+              Every project I take on is built with performance,
+              maintainability, and auditability in mind — because clean code and
+              clear logic always win.
+              <br />
+              I’ve worked across full-stack systems, but my heart is in the
+              backend — threading, request validation, encryption, and
+              cloud-native workflows. I’m always pushing to learn more about
+              cloud security, protocol hardening, and anything that keeps
+              systems safe and fast.
+              <br />
+              If you’re looking for someone who’ll break a problem into its
+              smallest parts, reason it out logically, and rebuild it with care
+              — that’s what I do best.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default About;
