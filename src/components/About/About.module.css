@@ -74,7 +74,7 @@
   }
 @media screen and (max-width: 760px){
 
-    .aboutSamContainer, .midText, .about,.samImg,  .samText{
+    .aboutSamContainer, .about,.samImg,  .samText{
         all: unset;
     }
     .about{
@@ -96,12 +96,25 @@
     .samImg img{
         width: 14em;
     }
-    .samText p{
-        font-size: 1.2em;
+  .samTextHeader h3,.samTextUL h3  {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+  }
+    .samText p, ul li p{
+        font-size: 0.8em;
         color: white;
         font-family: 'Roboto', sans-serif;
+        margin-bottom: 1rem;
 
     }
+    .samTextCont{
+      width: 90%;
+      margin: auto;
+    }
+    .samTextHeader h1 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
     
 
    
