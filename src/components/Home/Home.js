@@ -4,7 +4,7 @@ import python_logo from './../../img/python-3d.png';
 import react_logo from './../../img/react_logo.png';
 import my_logo from './../../img/my_new_logo.png';
 import magGlass from './../../img/mag.png';
-import cv from './../../doc/Samuel_L_Finnegan .docx';
+import cv from './../../doc/Samuel.L.Finnegan.pdf';
 import {FiDownload} from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import Form from './../Forms/Form';
