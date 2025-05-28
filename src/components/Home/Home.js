@@ -43,7 +43,7 @@ const Home = () => {
                     <div>
                         <a 
                         className={Style.downloadBtn}
-                        href={cv} download="Samuel_L_Finnegan.docx"
+                        href={cv} download="Samuel.L.Finnegan.pdf"
                         target="blank"
 
                         >
