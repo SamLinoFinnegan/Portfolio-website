@@ -18,7 +18,7 @@ export default function Form() {
 
 	const handleSubmit = (e) => {
 		const specialCharacters = ['"', "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "£"];
-		const specialCharacterRegex = /["#$%&'()*+,.\/:;<=>\[\\\]^_`{\|}]/;
+		const specialCharacterRegex = /["#$%&'()*+,./:;<=>[\\\]^_`{|}]/;
 		const trimmedMessage = formData.message.trim();
 		const trimmedName = formData.name.trim();
 		let hasError = false;
