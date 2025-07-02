@@ -21,6 +21,11 @@
     display: flex;
     flex-direction: column;
   }
+  .inputBox1{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
   .contactForm input,textarea{
     height: 35px;
     font-size: 16px;
